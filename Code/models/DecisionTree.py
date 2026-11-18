@@ -11,11 +11,16 @@ def compute_entropy(labels):
     where p(x) is the probability of x in the labels.
     """
 
+    # labels = 정답 array. ['positive', 'negative', 'positive', ...] 같은 문자열 1차원 배열
+    
+    # 1. class별 개수 count
+    # 2. count를 확률로 바꾼다. 공식: p(x) = count(x) / total_count
+    # 3. 공식 -Σ p·log₂(p)를 적용해서 entropy를 계산한다.
 
-
-
-
-
+    distinct_values, count = np.unique(labels, return_counts=True)
+    total_count = len(labels)
+    prob = count / total_count
+    entropy = -np.sum(prob * np.log2(prob))
     # =========================================================================
 
     return entropy
@@ -116,11 +121,28 @@ class DecisionTree():
             H(X|Y) = sum(p(y) * H(X|Y=y)) for all y in Y
             """
 
+            # Given: 
+            # labels: 현재 노드의 정답 전체
+            # feature_data: 지금 보고 있는 feature 열의 값 (예: x, o, b)
+            # distinct_values, counts: 그 feature가 가지는 값의 종류와 각각의 개수
 
+            # Not Given:
+            # 1. entropy, H(x): 현재 노드 정답 전체의 엔트로피
+            # 2. conditional_entropy, H(x|y): 
+            #   p(y) = 그 값의 개수 ÷ 전체 개수
+            #   H(X|Y=y) = feature가 y인 행의 labels만 골라서 구한 엔트로피
+            # 3. information_gain, IG(x|y): H(x) - H(x|Y)
 
-
-
-
+            # 1. entropy, H(x)
+            entropy = compute_entropy(labels)
+            # 2. conditional_entropy, H(x|y)
+            conditional_entropy = 0
+            for value, count in zip(distinct_values, counts):
+                p_y = count / len(feature_data)
+                entropy_y = compute_entropy(labels[feature_data == value])
+                conditional_entropy += p_y * entropy_y
+            # 3. information_gain, IG(x|y)
+            information_gain = entropy - conditional_entropy
             # =========================================================================
 
             if information_gain > max_gain:
