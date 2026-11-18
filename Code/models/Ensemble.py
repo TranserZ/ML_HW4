@@ -53,8 +53,13 @@ class Bagging:
             # 2. Train tree using the sampled X and y.
             # Write your code here.
 
+            # num_samples = N, 학습 data 개수
+            # rng = random number generator
+            # tree = 이번에 학습할 tree
+            # indices = 뽑힌 행 번호 N개짜리 배열이고, 아래에서 bootstrap_indices_에 저장
 
-            raise NotImplementedError("Complete EDIT HERE 1")
+            indices = rng.choice(num_samples, size=num_samples, replace=True)
+            tree.fit(X[indices], y[indices])
             # ==================== EDIT HERE 1: END ======================
 
             self.estimators_.append(tree)
@@ -80,8 +85,15 @@ class Bagging:
         # 2. Return +1 when vote_sum >= 0, otherwise return -1.
         # Write your code here.
 
+        
+        # self.estimators_ = 학습된 트리 리스트 
+        # vote_sum = 샘플마다 투표 합을 담는 배열이에요. 0으로 초기화돼 있어요
+        # prediction = 최종 예측 (−1/+1) 배열
 
-        raise NotImplementedError("Complete EDIT HERE 2")
+        for tree in self.estimators_ :
+            vote_sum += tree.predict(X)
+        prediction = np.where(vote_sum >= 0, 1, -1)
+
         # ==================== EDIT HERE 2: END ======================
 
         return prediction
@@ -128,8 +140,18 @@ class AdaBoost:
             # Sum the weights of incorrectly classified samples.
             # Write your code here.
 
+            # 가중 오류율: ε = Σ wᵢ · I(h(xᵢ) ≠ yᵢ). 여기서 I(...)는 조건이 참이면 1, 거짓이면 0
+            # 모델 가중치: α = ½ · ln((1 − ε) / ε)
+            # 샘플 가중치 갱신: wᵢ ← wᵢ · exp(−α · yᵢ · h(xᵢ)), 그다음 합이 1이 되도록 정규화
 
-            raise NotImplementedError("Complete EDIT HERE 3")
+            # 1. weights = 샘플 가중치 (N,). 처음엔 모두 1/N이고, 합은 항상 1
+            # 2. prediction = 이번 stump에서 학습 data에 낸 예측 (-1/+1)
+            # 3. error = weighted error rate. 가중 오류율 ε
+            # 4. safe_error = error를 아주 작은 값 ~ 1 사이로 잘라 둔 값. log(0)이나 0으로 나누기를 막아 줌.
+            # 5. alpha = 이 stump의 신뢰도
+
+            mask = (prediction != y)
+            error = np.sum(weights * mask)
             # ==================== EDIT HERE 3: END ======================
 
             # Provided: reject a learner no better than random guessing.
@@ -146,8 +168,12 @@ class AdaBoost:
             # 3. Normalize weights so their sum is 1.
             # Write your code here.
 
+            # 모델 가중치: α = ½ · ln((1 − ε) / ε)
 
-            raise NotImplementedError("Complete EDIT HERE 4")
+            alpha = 0.5 * np.log((1 - safe_error) / safe_error)
+            weights *= np.exp(-alpha * y * prediction)
+            weights = weights / np.sum(weights) # normalization!
+
             # ==================== EDIT HERE 4: END ======================
 
             self.estimators_.append(tree)
@@ -184,8 +210,14 @@ class AdaBoost:
         # 2. Return +1 when score >= 0, otherwise return -1.
         # Write your code here.
 
+        # 1. self.estimators_ = 학습된 stump
+        # 2. self.alphas_ = 각 stump의 신뢰도
+        # 3. score = 샘플마다 가중 투표 합을 담는 배열. 0으로 초기화 되어있음
 
-        raise NotImplementedError("Complete EDIT HERE 5")
+        for tree, alpha in zip(self.estimators_, self.alphas_):
+            score += alpha * tree.predict(X)
+        prediction = np.where(score >= 0, 1, -1)
+
         # ==================== EDIT HERE 5: END ======================
 
         return prediction
