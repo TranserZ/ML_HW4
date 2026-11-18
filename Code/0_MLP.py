@@ -16,8 +16,8 @@ class MLP:
         # please do not change other parts in this code except EDIT HERE
 
         # ReLU, Sigmoid, GELU
-        self.activation1 = ReLU() 
-        self.activation2 = ReLU() 
+        self.activation1 = Sigmoid() 
+        self.activation2 = Sigmoid() 
 
 
         # =============== EDIT HERE: END =================
@@ -63,9 +63,9 @@ class MLP:
 
 
 # =============== EDIT HERE ===============
-hidden_dim1 = 64
+hidden_dim1 = 32
 hidden_dim2 = 8
-num_epochs = 100 # default: 100
+num_epochs = 200 # default: 100
 batch_size = 16 # default: 16
 learning_rate = 0.01   # default: 0.01
 
