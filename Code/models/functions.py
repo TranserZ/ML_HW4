@@ -45,8 +45,22 @@ class ReLU:
         """
         dz = None
         # =============== EDIT HERE ===============
+        # z = activation에 들어오는 input. 바로 앞 layer의 output.
+        # out = activation의 output, f(z). 여기서 f()는 ReLU 함수.
+        # d_prev = dL/dout. 오른쪽 layer가 넘겨주는 값.
+        # dz = dL/dz. 내가 구하고 왼쪽 layer에 넘겨줄 값.
+        # self.zero_mask = z가 0보다 작을경우 true, 0보다 크거나 같을 경우 false.
+        # z = np.array([[ 3, -1],
+        #               [-2,  5]])
+        # zero_mask = z < 0
+        # [[False,  True],
+        #  [ True, False]]
 
+        # dz = dL/dout * dout/dz
+        #    = d_prev * f'(z)
+        dfdz = ~self.zero_mask # false와 true를 반대로 뒤집음. 
 
+        dz = d_prev * dfdz # true일 경우 1, false일 경우 0이므로, 음수는 0으로 바뀌고 양수는 그대로. 
 
         # =========================================
 
@@ -102,10 +116,17 @@ class GELU:
         """
         dgelu = None
 
-
         # =============== EDIT HERE ===============
+        # z = activation에 들어오는 input. 바로 앞 layer의 output.
+        # out = activation의 output, f(z). 여기서 f()는 ReLU 함수.
+        # d_prev = dL/dout. 오른쪽 layer가 넘겨주는 값.
+        # dz = dL/dz. 내가 구하고 왼쪽 layer에 넘겨줄 값. AKA. dgelu
+        # self.sigmod_term = sigmoid값.
+        # GELU의 sigmoid = sigmoid(1.702 * z). 
+        #   따라서 미분 = sigmoid(1.702 * z) + 1.702 * z * sigmoid(1.702 * z) * (1 - sigmoid(1.702 * z))
 
-        
+        dsigmoid = self.sigmoid_term + 1.702 * self.x * self.sigmoid_term * (1 - self.sigmoid_term)
+        dgelu = d_prev * dsigmoid        
 
         # =========================================
         
@@ -148,10 +169,14 @@ class Sigmoid:
 
         dz = None
         # =============== EDIT HERE ===============
+        # z = activation에 들어오는 input. 바로 앞 layer의 output.
+        # out = activation의 output, f(z). 여기서 f()는 ReLU 함수.
+        # d_prev = dL/dout. 오른쪽 layer가 넘겨주는 값.
+        # dz = dL/dz. 내가 구하고 왼쪽 layer에 넘겨줄 값.
+        # self.out = sigmoid값.
 
-
-
-
+        dsigmoid = self.out * (1 - self.out)
+        dz = d_prev * dsigmoid
         # =========================================
         return dz
     
@@ -203,9 +228,22 @@ class Linear:
         self.dW = None
         self.db = None
         # =============== EDIT HERE ===============
+        # z = activation에 들어오는 input. 바로 앞 layer의 output.
+        # d_prev = dL/dout. 오른쪽 layer가 넘겨주는 값.
+        # self.dW = dL/dW. 내가 구하고 update할 값.
+        # self.db = dL/db. 내가 구하고 update할 값.
+        # dx = dL/dx. 내가 구하고 왼쪽 layer에 넘겨줄 값.
+        # self.out = linear layer output 값. out = xW + b
 
-
-
+        # dout/dW = x.T
+        # x = [N, D], d_prev = [N, H], W = [D, H]
+        self.dW = np.matmul(self.x.T, d_prev) # dW = [D, H]
+        # dout/db = 1
+        # d_prev = [N, H], b = [H,]
+        self.db = np.sum(d_prev, axis=0) # db = [H,]
+        # dout/dx = W.T
+        # d_prev = [N, H], W = [D, H]
+        dx = np.matmul(d_prev, self.W.T) # dx = [N, D]
         # =========================================
         
         return dx
@@ -303,10 +341,50 @@ class SigmoidLayer:
         you should calculate gradient of sigmoid and linear layer
         ! tip: use backward functions that you have already written!!!! 
         """
-        # call backward 
+        # self.x = activation에 들어오는 input. 바로 앞 layer의 output.
+        # self.y_hat = 예측 확률 sigmoid(z)
+        # self.y = 정답 label
+        # d_bce = dL/dy_hat. binary cross entropy loss에 대한 gradient. 이미 계산됨.
+        # sig_d_prev = d_prev * d_bce. sigmoid layer에 대한 gradient. sigmoid backward로 넘겨줄 값.
+        # lin_d_prev = linear layer에 대한 gradient. linear backward로 넘겨줄 값. 
+        # dx = 다음 layer로 넘겨줄 gradient. dL/dx.
 
+        # 구조:
+        # x -> [self.linear] -> z -> [self.sigmoid] -> y_hat -> loss
+        #      Linear 객체            Sigmoid 객체
 
+        # bce(binary cross entropy):
+        # L = -1/N * sum(y * log(y_hat) + (1 - y) * log(1 - y_hat))
+        # 그리고 bce의 미분은 다음과 같이 계산됨:
+        # dL/dy_hat = 1/N * (-y/y_hat + (1 - y)/(1-y_hat))
 
+        # 값을 두 번 넘겨야 한다:
+        # sig_d_prev -> self.sigmoid.backward -> lin_d_prev -> self.linear.backward -> dx
+        # 1. self.sigmoid의 backward에 sig_d_prev를 넣고, 결과를 lin_d_prev가 받는다.
+        # 2. self.linear의 backward에 lin_d_prev에 넣고, 결과를 dx가 받는다.
+
+        # chain rule 전개:
+        # dL/dx = dL/dy_hat * dy_hat/dz * dz/dx
+        #
+        # (1) dL/dy_hat = d_prev * d_bce                      -> sig_d_prev
+        #     (d_prev = 1 이므로 sig_d_prev = d_bce)
+        # (2) dL/dz     = dL/dy_hat * dy_hat/dz
+        #               = sig_d_prev * y_hat * (1 - y_hat)    -> lin_d_prev  [self.sigmoid.backward]
+        # (3) dL/dW     = x.T @ dL/dz                         -> self.linear.dW  [self.linear.backward]
+        #     dL/db     = sum(dL/dz, axis=0)                  -> self.linear.db
+        #     dL/dx     = dL/dz @ W.T                         -> dx
+        #
+        # 각 gradient를 담은 variable:
+        # dL/dy_hat = sig_d_prev (= d_bce)
+        # dy_hat/dz = y_hat * (1 - y_hat). 따로 저장 안 됨. Sigmoid.backward 안의 dsigmoid.
+        # dL/dz     = lin_d_prev
+        # dz/dW, dz/db, dz/dx = x.T, 1, W.T. 따로 저장 안 됨. Linear.backward 안에서 곱해짐.
+        # dL/dW     = self.linear.dW (-> 아래에서 self.dW로 복사)
+        # dL/db     = self.linear.db (-> 아래에서 self.db로 복사)
+        # dL/dx     = dx
+
+        lin_d_prev = self.sigmoid.backward(sig_d_prev) # 구조에서 z로 미분한 것. dL/dz.
+        dx = self.linear.backward(lin_d_prev) 
         # =========================================
         
         self.dW = self.linear.dW
