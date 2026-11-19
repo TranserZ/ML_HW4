@@ -1,0 +1,9 @@
+model,n_estimators,train_accuracy,test_accuracy
+Single shallow tree,1,0.8266666666666667,0.8005
+Single deep tree,1,1.0,0.888
+Bagging,1,0.9533333333333334,0.9095
+AdaBoost,1,0.8266666666666667,0.8005
+Bagging,10,0.98,0.918
+AdaBoost,10,0.9066666666666666,0.887
+Bagging,50,1.0,0.925
+AdaBoost,50,0.9533333333333334,0.936

@@ -1,0 +1,624 @@
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+========== 0) Baseline ==========
+[Baseline] default=True
+    CV acc 0.3880 ± 0.0052 | CV F1 0.2585 | train acc 1.0000 | gap 0.6120 | 1.5s
+Baseline: DecisionTreeClassifier(random_state=42), 기본값
+(a) holdout 75/25 accuracy (notebook 방식): 0.3931
+(b) 5-fold CV accuracy: 0.3880 ± 0.0052
+    5-fold CV macro F1: 0.2585 ± 0.0035
+    train accuracy: 1.0000 (gap 0.6120)
+(c) Kaggle public LB: (제출 후 직접 기록)
+
+========== 1)~4) 넓은 탐색: 총 288개 조합 ==========
+(1/288) [DecisionTree] max_depth=4, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.4969 ± 0.0034 | CV F1 0.2610 | train acc 0.5016 | gap 0.0047 | 0.3s
+(2/288) [DecisionTree] max_depth=4, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.4225 ± 0.0548 | CV F1 0.2716 | train acc 0.4290 | gap 0.0064 | 0.3s
+(3/288) [DecisionTree] max_depth=4, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.4920 ± 0.0024 | CV F1 0.2510 | train acc 0.4973 | gap 0.0053 | 0.4s
+(4/288) [DecisionTree] max_depth=4, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.3901 ± 0.0499 | CV F1 0.2646 | train acc 0.3957 | gap 0.0057 | 0.4s
+(5/288) [DecisionTree] max_depth=4, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.4968 ± 0.0034 | CV F1 0.2610 | train acc 0.5016 | gap 0.0047 | 0.3s
+(6/288) [DecisionTree] max_depth=4, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.4217 ± 0.0541 | CV F1 0.2719 | train acc 0.4285 | gap 0.0068 | 0.3s
+(7/288) [DecisionTree] max_depth=4, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.4920 ± 0.0024 | CV F1 0.2510 | train acc 0.4973 | gap 0.0053 | 0.4s
+(8/288) [DecisionTree] max_depth=4, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.3901 ± 0.0499 | CV F1 0.2646 | train acc 0.3957 | gap 0.0057 | 0.4s
+(9/288) [DecisionTree] max_depth=4, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.4969 ± 0.0034 | CV F1 0.2606 | train acc 0.5015 | gap 0.0046 | 0.3s
+(10/288) [DecisionTree] max_depth=4, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.4212 ± 0.0546 | CV F1 0.2718 | train acc 0.4280 | gap 0.0068 | 0.3s
+(11/288) [DecisionTree] max_depth=4, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.4920 ± 0.0024 | CV F1 0.2510 | train acc 0.4973 | gap 0.0053 | 0.4s
+(12/288) [DecisionTree] max_depth=4, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.3895 ± 0.0504 | CV F1 0.2643 | train acc 0.3953 | gap 0.0058 | 0.4s
+(13/288) [DecisionTree] max_depth=4, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.4961 ± 0.0037 | CV F1 0.2629 | train acc 0.5013 | gap 0.0052 | 0.3s
+(14/288) [DecisionTree] max_depth=4, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.4214 ± 0.0545 | CV F1 0.2712 | train acc 0.4282 | gap 0.0068 | 0.3s
+(15/288) [DecisionTree] max_depth=4, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.4913 ± 0.0026 | CV F1 0.2518 | train acc 0.4971 | gap 0.0057 | 0.4s
+(16/288) [DecisionTree] max_depth=4, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.4317 ± 0.0455 | CV F1 0.2728 | train acc 0.4358 | gap 0.0041 | 0.4s
+(17/288) [DecisionTree] max_depth=4, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.4964 ± 0.0032 | CV F1 0.2622 | train acc 0.5012 | gap 0.0049 | 0.3s
+(18/288) [DecisionTree] max_depth=4, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.4187 ± 0.0541 | CV F1 0.2697 | train acc 0.4255 | gap 0.0069 | 0.4s
+(19/288) [DecisionTree] max_depth=4, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.4919 ± 0.0027 | CV F1 0.2554 | train acc 0.4970 | gap 0.0051 | 0.4s
+(20/288) [DecisionTree] max_depth=4, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.4358 ± 0.0362 | CV F1 0.2751 | train acc 0.4387 | gap 0.0029 | 0.4s
+(21/288) [DecisionTree] max_depth=8, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.5129 ± 0.0066 | CV F1 0.3000 | train acc 0.5476 | gap 0.0347 | 0.4s
+(22/288) [DecisionTree] max_depth=8, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.4140 ± 0.0281 | CV F1 0.2987 | train acc 0.4484 | gap 0.0344 | 0.4s
+(23/288) [DecisionTree] max_depth=8, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.5100 ± 0.0035 | CV F1 0.2934 | train acc 0.5394 | gap 0.0294 | 0.6s
+(24/288) [DecisionTree] max_depth=8, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.4127 ± 0.0212 | CV F1 0.2994 | train acc 0.4463 | gap 0.0337 | 0.5s
+(25/288) [DecisionTree] max_depth=8, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.5131 ± 0.0068 | CV F1 0.3009 | train acc 0.5452 | gap 0.0320 | 0.3s
+(26/288) [DecisionTree] max_depth=8, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.4116 ± 0.0266 | CV F1 0.2979 | train acc 0.4444 | gap 0.0327 | 0.4s
+(27/288) [DecisionTree] max_depth=8, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.5108 ± 0.0031 | CV F1 0.2946 | train acc 0.5372 | gap 0.0264 | 0.5s
+(28/288) [DecisionTree] max_depth=8, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.4118 ± 0.0220 | CV F1 0.2995 | train acc 0.4431 | gap 0.0313 | 0.5s
+(29/288) [DecisionTree] max_depth=8, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.5149 ± 0.0069 | CV F1 0.2998 | train acc 0.5396 | gap 0.0248 | 0.3s
+(30/288) [DecisionTree] max_depth=8, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.4092 ± 0.0267 | CV F1 0.2968 | train acc 0.4394 | gap 0.0302 | 0.4s
+(31/288) [DecisionTree] max_depth=8, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.5104 ± 0.0030 | CV F1 0.2903 | train acc 0.5323 | gap 0.0219 | 0.5s
+(32/288) [DecisionTree] max_depth=8, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.4137 ± 0.0219 | CV F1 0.3002 | train acc 0.4394 | gap 0.0257 | 0.5s
+(33/288) [DecisionTree] max_depth=8, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.5109 ± 0.0058 | CV F1 0.2947 | train acc 0.5328 | gap 0.0219 | 0.3s
+(34/288) [DecisionTree] max_depth=8, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.4134 ± 0.0271 | CV F1 0.2971 | train acc 0.4375 | gap 0.0241 | 0.4s
+(35/288) [DecisionTree] max_depth=8, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.5067 ± 0.0041 | CV F1 0.2836 | train acc 0.5260 | gap 0.0193 | 0.5s
+(36/288) [DecisionTree] max_depth=8, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.4068 ± 0.0113 | CV F1 0.3013 | train acc 0.4295 | gap 0.0227 | 0.5s
+(37/288) [DecisionTree] max_depth=8, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.5092 ± 0.0060 | CV F1 0.2858 | train acc 0.5256 | gap 0.0164 | 0.3s
+(38/288) [DecisionTree] max_depth=8, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.3980 ± 0.0213 | CV F1 0.2965 | train acc 0.4177 | gap 0.0198 | 0.4s
+(39/288) [DecisionTree] max_depth=8, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.5071 ± 0.0044 | CV F1 0.2784 | train acc 0.5196 | gap 0.0126 | 0.5s
+(40/288) [DecisionTree] max_depth=8, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.4135 ± 0.0074 | CV F1 0.2989 | train acc 0.4328 | gap 0.0192 | 0.5s
+(41/288) [DecisionTree] max_depth=12, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.5062 ± 0.0019 | CV F1 0.3009 | train acc 0.6331 | gap 0.1269 | 0.5s
+(42/288) [DecisionTree] max_depth=12, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.3904 ± 0.0124 | CV F1 0.2909 | train acc 0.5130 | gap 0.1226 | 0.4s
+(43/288) [DecisionTree] max_depth=12, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.4936 ± 0.0082 | CV F1 0.2946 | train acc 0.6370 | gap 0.1435 | 0.7s
+(44/288) [DecisionTree] max_depth=12, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.3685 ± 0.0143 | CV F1 0.2759 | train acc 0.5111 | gap 0.1425 | 0.7s
+(45/288) [DecisionTree] max_depth=12, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.5119 ± 0.0025 | CV F1 0.3083 | train acc 0.6026 | gap 0.0906 | 0.4s
+(46/288) [DecisionTree] max_depth=12, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.3740 ± 0.0161 | CV F1 0.2833 | train acc 0.4748 | gap 0.1008 | 0.4s
+(47/288) [DecisionTree] max_depth=12, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.4997 ± 0.0070 | CV F1 0.2967 | train acc 0.5974 | gap 0.0978 | 0.7s
+(48/288) [DecisionTree] max_depth=12, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.3590 ± 0.0145 | CV F1 0.2748 | train acc 0.4652 | gap 0.1062 | 0.7s
+(49/288) [DecisionTree] max_depth=12, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.5201 ± 0.0050 | CV F1 0.3137 | train acc 0.5739 | gap 0.0538 | 0.5s
+(50/288) [DecisionTree] max_depth=12, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.3666 ± 0.0165 | CV F1 0.2862 | train acc 0.4345 | gap 0.0679 | 0.4s
+(51/288) [DecisionTree] max_depth=12, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.5137 ± 0.0060 | CV F1 0.3050 | train acc 0.5610 | gap 0.0473 | 0.7s
+(52/288) [DecisionTree] max_depth=12, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.3607 ± 0.0136 | CV F1 0.2817 | train acc 0.4189 | gap 0.0583 | 0.6s
+(53/288) [DecisionTree] max_depth=12, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.5150 ± 0.0072 | CV F1 0.3074 | train acc 0.5506 | gap 0.0357 | 0.5s
+(54/288) [DecisionTree] max_depth=12, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.3588 ± 0.0222 | CV F1 0.2843 | train acc 0.4105 | gap 0.0517 | 0.4s
+(55/288) [DecisionTree] max_depth=12, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.5109 ± 0.0031 | CV F1 0.2968 | train acc 0.5413 | gap 0.0305 | 0.6s
+(56/288) [DecisionTree] max_depth=12, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.3598 ± 0.0100 | CV F1 0.2826 | train acc 0.4058 | gap 0.0460 | 0.7s
+(57/288) [DecisionTree] max_depth=12, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.5131 ± 0.0051 | CV F1 0.2958 | train acc 0.5323 | gap 0.0192 | 0.4s
+(58/288) [DecisionTree] max_depth=12, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.3622 ± 0.0137 | CV F1 0.2872 | train acc 0.3993 | gap 0.0371 | 0.4s
+(59/288) [DecisionTree] max_depth=12, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.5100 ± 0.0023 | CV F1 0.2849 | train acc 0.5272 | gap 0.0171 | 0.6s
+(60/288) [DecisionTree] max_depth=12, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.3632 ± 0.0093 | CV F1 0.2862 | train acc 0.3943 | gap 0.0311 | 0.6s
+(61/288) [DecisionTree] max_depth=16, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.4756 ± 0.0081 | CV F1 0.2884 | train acc 0.7511 | gap 0.2755 | 0.5s
+(62/288) [DecisionTree] max_depth=16, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.3752 ± 0.0106 | CV F1 0.2743 | train acc 0.6420 | gap 0.2668 | 0.5s
+(63/288) [DecisionTree] max_depth=16, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.4506 ± 0.0024 | CV F1 0.2793 | train acc 0.7974 | gap 0.3468 | 0.8s
+(64/288) [DecisionTree] max_depth=16, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.3485 ± 0.0034 | CV F1 0.2571 | train acc 0.6655 | gap 0.3170 | 0.8s
+(65/288) [DecisionTree] max_depth=16, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.4944 ± 0.0039 | CV F1 0.3024 | train acc 0.6547 | gap 0.1603 | 0.4s
+(66/288) [DecisionTree] max_depth=16, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.3402 ± 0.0137 | CV F1 0.2646 | train acc 0.5177 | gap 0.1775 | 0.5s
+(67/288) [DecisionTree] max_depth=16, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.4745 ± 0.0027 | CV F1 0.2895 | train acc 0.6592 | gap 0.1847 | 0.8s
+(68/288) [DecisionTree] max_depth=16, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.3107 ± 0.0063 | CV F1 0.2491 | train acc 0.5084 | gap 0.1977 | 0.8s
+(69/288) [DecisionTree] max_depth=16, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.5146 ± 0.0058 | CV F1 0.3147 | train acc 0.5887 | gap 0.0741 | 0.4s
+(70/288) [DecisionTree] max_depth=16, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.3172 ± 0.0149 | CV F1 0.2632 | train acc 0.4201 | gap 0.1028 | 0.4s
+(71/288) [DecisionTree] max_depth=16, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.5119 ± 0.0056 | CV F1 0.3066 | train acc 0.5740 | gap 0.0621 | 0.7s
+(72/288) [DecisionTree] max_depth=16, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.3031 ± 0.0069 | CV F1 0.2566 | train acc 0.3966 | gap 0.0934 | 0.7s
+(73/288) [DecisionTree] max_depth=16, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.5146 ± 0.0072 | CV F1 0.3097 | train acc 0.5541 | gap 0.0396 | 0.4s
+(74/288) [DecisionTree] max_depth=16, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.3166 ± 0.0198 | CV F1 0.2658 | train acc 0.3884 | gap 0.0717 | 0.4s
+(75/288) [DecisionTree] max_depth=16, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.5090 ± 0.0035 | CV F1 0.2956 | train acc 0.5435 | gap 0.0345 | 0.7s
+(76/288) [DecisionTree] max_depth=16, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.3150 ± 0.0190 | CV F1 0.2641 | train acc 0.3751 | gap 0.0602 | 0.7s
+(77/288) [DecisionTree] max_depth=16, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.5128 ± 0.0056 | CV F1 0.2957 | train acc 0.5325 | gap 0.0197 | 0.4s
+(78/288) [DecisionTree] max_depth=16, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.3378 ± 0.0082 | CV F1 0.2780 | train acc 0.3810 | gap 0.0432 | 0.4s
+(79/288) [DecisionTree] max_depth=16, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.5098 ± 0.0025 | CV F1 0.2848 | train acc 0.5272 | gap 0.0173 | 0.5s
+(80/288) [DecisionTree] max_depth=16, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.3477 ± 0.0066 | CV F1 0.2812 | train acc 0.3817 | gap 0.0341 | 0.6s
+(81/288) [DecisionTree] max_depth=24, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.4175 ± 0.0082 | CV F1 0.2682 | train acc 0.9254 | gap 0.5079 | 0.5s
+(82/288) [DecisionTree] max_depth=24, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.3607 ± 0.0073 | CV F1 0.2529 | train acc 0.8830 | gap 0.5224 | 0.5s
+(83/288) [DecisionTree] max_depth=24, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.3939 ± 0.0013 | CV F1 0.2588 | train acc 0.9736 | gap 0.5797 | 0.8s
+(84/288) [DecisionTree] max_depth=24, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.3659 ± 0.0079 | CV F1 0.2517 | train acc 0.9333 | gap 0.5674 | 0.9s
+(85/288) [DecisionTree] max_depth=24, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.4609 ± 0.0072 | CV F1 0.2902 | train acc 0.7025 | gap 0.2416 | 0.5s
+(86/288) [DecisionTree] max_depth=24, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.2852 ± 0.0041 | CV F1 0.2339 | train acc 0.5752 | gap 0.2899 | 0.5s
+(87/288) [DecisionTree] max_depth=24, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.4418 ± 0.0038 | CV F1 0.2798 | train acc 0.7071 | gap 0.2653 | 0.8s
+(88/288) [DecisionTree] max_depth=24, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.2783 ± 0.0113 | CV F1 0.2290 | train acc 0.5839 | gap 0.3056 | 0.8s
+(89/288) [DecisionTree] max_depth=24, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.5109 ± 0.0039 | CV F1 0.3146 | train acc 0.5939 | gap 0.0830 | 0.4s
+(90/288) [DecisionTree] max_depth=24, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.2706 ± 0.0092 | CV F1 0.2388 | train acc 0.4022 | gap 0.1316 | 0.5s
+(91/288) [DecisionTree] max_depth=24, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.5096 ± 0.0058 | CV F1 0.3053 | train acc 0.5781 | gap 0.0685 | 0.7s
+(92/288) [DecisionTree] max_depth=24, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.2537 ± 0.0053 | CV F1 0.2302 | train acc 0.3713 | gap 0.1176 | 0.7s
+(93/288) [DecisionTree] max_depth=24, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.5141 ± 0.0074 | CV F1 0.3096 | train acc 0.5544 | gap 0.0403 | 0.4s
+(94/288) [DecisionTree] max_depth=24, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.2956 ± 0.0109 | CV F1 0.2562 | train acc 0.3726 | gap 0.0770 | 0.4s
+(95/288) [DecisionTree] max_depth=24, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.5089 ± 0.0035 | CV F1 0.2961 | train acc 0.5436 | gap 0.0347 | 0.7s
+(96/288) [DecisionTree] max_depth=24, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.2986 ± 0.0155 | CV F1 0.2574 | train acc 0.3634 | gap 0.0648 | 0.7s
+(97/288) [DecisionTree] max_depth=24, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.5128 ± 0.0056 | CV F1 0.2957 | train acc 0.5325 | gap 0.0197 | 0.4s
+(98/288) [DecisionTree] max_depth=24, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.3346 ± 0.0098 | CV F1 0.2767 | train acc 0.3781 | gap 0.0435 | 0.5s
+(99/288) [DecisionTree] max_depth=24, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.5098 ± 0.0025 | CV F1 0.2848 | train acc 0.5272 | gap 0.0173 | 0.6s
+(100/288) [DecisionTree] max_depth=24, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.3452 ± 0.0050 | CV F1 0.2803 | train acc 0.3802 | gap 0.0350 | 0.6s
+(101/288) [DecisionTree] max_depth=None, min_samples_leaf=1, criterion=gini, class_weight=None
+    CV acc 0.3880 ± 0.0052 | CV F1 0.2585 | train acc 1.0000 | gap 0.6120 | 0.6s
+(102/288) [DecisionTree] max_depth=None, min_samples_leaf=1, criterion=gini, class_weight=balanced
+    CV acc 0.3717 ± 0.0044 | CV F1 0.2523 | train acc 1.0000 | gap 0.6283 | 0.6s
+(103/288) [DecisionTree] max_depth=None, min_samples_leaf=1, criterion=entropy, class_weight=None
+    CV acc 0.3840 ± 0.0033 | CV F1 0.2560 | train acc 1.0000 | gap 0.6160 | 0.8s
+(104/288) [DecisionTree] max_depth=None, min_samples_leaf=1, criterion=entropy, class_weight=balanced
+    CV acc 0.3736 ± 0.0088 | CV F1 0.2523 | train acc 1.0000 | gap 0.6264 | 0.9s
+(105/288) [DecisionTree] max_depth=None, min_samples_leaf=5, criterion=gini, class_weight=None
+    CV acc 0.4501 ± 0.0084 | CV F1 0.2874 | train acc 0.7112 | gap 0.2611 | 0.5s
+(106/288) [DecisionTree] max_depth=None, min_samples_leaf=5, criterion=gini, class_weight=balanced
+    CV acc 0.2744 ± 0.0053 | CV F1 0.2271 | train acc 0.5936 | gap 0.3192 | 0.5s
+(107/288) [DecisionTree] max_depth=None, min_samples_leaf=5, criterion=entropy, class_weight=None
+    CV acc 0.4380 ± 0.0030 | CV F1 0.2774 | train acc 0.7113 | gap 0.2733 | 0.8s
+(108/288) [DecisionTree] max_depth=None, min_samples_leaf=5, criterion=entropy, class_weight=balanced
+    CV acc 0.2732 ± 0.0052 | CV F1 0.2265 | train acc 0.5959 | gap 0.3228 | 0.9s
+(109/288) [DecisionTree] max_depth=None, min_samples_leaf=20, criterion=gini, class_weight=None
+    CV acc 0.5104 ± 0.0040 | CV F1 0.3147 | train acc 0.5940 | gap 0.0836 | 0.5s
+(110/288) [DecisionTree] max_depth=None, min_samples_leaf=20, criterion=gini, class_weight=balanced
+    CV acc 0.2650 ± 0.0059 | CV F1 0.2358 | train acc 0.3995 | gap 0.1344 | 0.5s
+(111/288) [DecisionTree] max_depth=None, min_samples_leaf=20, criterion=entropy, class_weight=None
+    CV acc 0.5095 ± 0.0060 | CV F1 0.3052 | train acc 0.5782 | gap 0.0687 | 0.7s
+(112/288) [DecisionTree] max_depth=None, min_samples_leaf=20, criterion=entropy, class_weight=balanced
+    CV acc 0.2495 ± 0.0036 | CV F1 0.2278 | train acc 0.3688 | gap 0.1192 | 0.7s
+(113/288) [DecisionTree] max_depth=None, min_samples_leaf=50, criterion=gini, class_weight=None
+    CV acc 0.5141 ± 0.0074 | CV F1 0.3096 | train acc 0.5544 | gap 0.0403 | 0.4s
+(114/288) [DecisionTree] max_depth=None, min_samples_leaf=50, criterion=gini, class_weight=balanced
+    CV acc 0.2942 ± 0.0084 | CV F1 0.2556 | train acc 0.3714 | gap 0.0773 | 0.4s
+(115/288) [DecisionTree] max_depth=None, min_samples_leaf=50, criterion=entropy, class_weight=None
+    CV acc 0.5089 ± 0.0035 | CV F1 0.2961 | train acc 0.5436 | gap 0.0347 | 0.7s
+(116/288) [DecisionTree] max_depth=None, min_samples_leaf=50, criterion=entropy, class_weight=balanced
+    CV acc 0.2986 ± 0.0155 | CV F1 0.2574 | train acc 0.3634 | gap 0.0648 | 0.7s
+(117/288) [DecisionTree] max_depth=None, min_samples_leaf=100, criterion=gini, class_weight=None
+    CV acc 0.5128 ± 0.0056 | CV F1 0.2957 | train acc 0.5325 | gap 0.0197 | 0.4s
+(118/288) [DecisionTree] max_depth=None, min_samples_leaf=100, criterion=gini, class_weight=balanced
+    CV acc 0.3346 ± 0.0098 | CV F1 0.2767 | train acc 0.3781 | gap 0.0435 | 0.4s
+(119/288) [DecisionTree] max_depth=None, min_samples_leaf=100, criterion=entropy, class_weight=None
+    CV acc 0.5098 ± 0.0025 | CV F1 0.2848 | train acc 0.5272 | gap 0.0173 | 0.6s
+(120/288) [DecisionTree] max_depth=None, min_samples_leaf=100, criterion=entropy, class_weight=balanced
+    CV acc 0.3452 ± 0.0050 | CV F1 0.2803 | train acc 0.3802 | gap 0.0350 | 0.7s
+(121/288) [RandomForest] max_features=sqrt, min_samples_leaf=1, class_weight=None
+    CV acc 0.5758 ± 0.0040 | CV F1 0.3587 | train acc 1.0000 | gap 0.4242 | 11.1s
+(122/288) [RandomForest] max_features=sqrt, min_samples_leaf=1, class_weight=balanced
+    CV acc 0.5217 ± 0.0053 | CV F1 0.3558 | train acc 0.9921 | gap 0.4704 | 11.1s
+(123/288) [RandomForest] max_features=sqrt, min_samples_leaf=2, class_weight=None
+    CV acc 0.5781 ± 0.0043 | CV F1 0.3537 | train acc 0.8783 | gap 0.3002 | 10.1s
+(124/288) [RandomForest] max_features=sqrt, min_samples_leaf=2, class_weight=balanced
+    CV acc 0.5136 ± 0.0052 | CV F1 0.3581 | train acc 0.9349 | gap 0.4213 | 9.3s
+(125/288) [RandomForest] max_features=sqrt, min_samples_leaf=5, class_weight=None
+    CV acc 0.5673 ± 0.0041 | CV F1 0.3383 | train acc 0.6678 | gap 0.1005 | 8.3s
+(126/288) [RandomForest] max_features=sqrt, min_samples_leaf=5, class_weight=balanced
+    CV acc 0.5022 ± 0.0034 | CV F1 0.3569 | train acc 0.7960 | gap 0.2938 | 7.8s
+(127/288) [RandomForest] max_features=sqrt, min_samples_leaf=10, class_weight=None
+    CV acc 0.5545 ± 0.0039 | CV F1 0.3167 | train acc 0.6129 | gap 0.0584 | 7.4s
+(128/288) [RandomForest] max_features=sqrt, min_samples_leaf=10, class_weight=balanced
+    CV acc 0.4905 ± 0.0045 | CV F1 0.3496 | train acc 0.6482 | gap 0.1577 | 6.9s
+(129/288) [RandomForest] max_features=sqrt, min_samples_leaf=20, class_weight=None
+    CV acc 0.5399 ± 0.0033 | CV F1 0.2941 | train acc 0.5732 | gap 0.0333 | 6.7s
+(130/288) [RandomForest] max_features=sqrt, min_samples_leaf=20, class_weight=balanced
+    CV acc 0.4790 ± 0.0045 | CV F1 0.3379 | train acc 0.5548 | gap 0.0758 | 6.4s
+(131/288) [RandomForest] max_features=sqrt, min_samples_leaf=50, class_weight=None
+    CV acc 0.5226 ± 0.0042 | CV F1 0.2608 | train acc 0.5362 | gap 0.0136 | 5.9s
+(132/288) [RandomForest] max_features=sqrt, min_samples_leaf=50, class_weight=balanced
+    CV acc 0.4632 ± 0.0055 | CV F1 0.3200 | train acc 0.4905 | gap 0.0274 | 5.6s
+(133/288) [RandomForest] max_features=0.2, min_samples_leaf=1, class_weight=None
+    CV acc 0.5771 ± 0.0028 | CV F1 0.3603 | train acc 1.0000 | gap 0.4229 | 13.0s
+(134/288) [RandomForest] max_features=0.2, min_samples_leaf=1, class_weight=balanced
+    CV acc 0.5220 ± 0.0036 | CV F1 0.3545 | train acc 0.9917 | gap 0.4697 | 11.9s
+(135/288) [RandomForest] max_features=0.2, min_samples_leaf=2, class_weight=None
+    CV acc 0.5786 ± 0.0045 | CV F1 0.3575 | train acc 0.9236 | gap 0.3450 | 11.8s
+(136/288) [RandomForest] max_features=0.2, min_samples_leaf=2, class_weight=balanced
+    CV acc 0.5146 ± 0.0051 | CV F1 0.3571 | train acc 0.9411 | gap 0.4265 | 10.9s
+(137/288) [RandomForest] max_features=0.2, min_samples_leaf=5, class_weight=None
+    CV acc 0.5699 ± 0.0059 | CV F1 0.3428 | train acc 0.6846 | gap 0.1147 | 10.1s
+(138/288) [RandomForest] max_features=0.2, min_samples_leaf=5, class_weight=balanced
+    CV acc 0.5038 ± 0.0042 | CV F1 0.3578 | train acc 0.8203 | gap 0.3165 | 9.3s
+(139/288) [RandomForest] max_features=0.2, min_samples_leaf=10, class_weight=None
+    CV acc 0.5604 ± 0.0051 | CV F1 0.3290 | train acc 0.6296 | gap 0.0692 | 9.2s
+(140/288) [RandomForest] max_features=0.2, min_samples_leaf=10, class_weight=balanced
+    CV acc 0.4928 ± 0.0037 | CV F1 0.3516 | train acc 0.6788 | gap 0.1860 | 8.5s
+(141/288) [RandomForest] max_features=0.2, min_samples_leaf=20, class_weight=None
+    CV acc 0.5471 ± 0.0039 | CV F1 0.3085 | train acc 0.5873 | gap 0.0402 | 8.5s
+(142/288) [RandomForest] max_features=0.2, min_samples_leaf=20, class_weight=balanced
+    CV acc 0.4824 ± 0.0036 | CV F1 0.3439 | train acc 0.5725 | gap 0.0901 | 7.9s
+(143/288) [RandomForest] max_features=0.2, min_samples_leaf=50, class_weight=None
+    CV acc 0.5288 ± 0.0032 | CV F1 0.2778 | train acc 0.5465 | gap 0.0177 | 7.5s
+(144/288) [RandomForest] max_features=0.2, min_samples_leaf=50, class_weight=balanced
+    CV acc 0.4656 ± 0.0031 | CV F1 0.3279 | train acc 0.4991 | gap 0.0335 | 6.9s
+(145/288) [RandomForest] max_features=0.4, min_samples_leaf=1, class_weight=None
+    CV acc 0.5759 ± 0.0043 | CV F1 0.3610 | train acc 1.0000 | gap 0.4241 | 19.9s
+(146/288) [RandomForest] max_features=0.4, min_samples_leaf=1, class_weight=balanced
+    CV acc 0.5196 ± 0.0057 | CV F1 0.3548 | train acc 0.9912 | gap 0.4716 | 17.5s
+(147/288) [RandomForest] max_features=0.4, min_samples_leaf=2, class_weight=None
+    CV acc 0.5784 ± 0.0038 | CV F1 0.3616 | train acc 0.9709 | gap 0.3925 | 18.7s
+(148/288) [RandomForest] max_features=0.4, min_samples_leaf=2, class_weight=balanced
+    CV acc 0.5146 ± 0.0065 | CV F1 0.3565 | train acc 0.9508 | gap 0.4362 | 16.6s
+(149/288) [RandomForest] max_features=0.4, min_samples_leaf=5, class_weight=None
+    CV acc 0.5716 ± 0.0054 | CV F1 0.3501 | train acc 0.7060 | gap 0.1345 | 16.9s
+(150/288) [RandomForest] max_features=0.4, min_samples_leaf=5, class_weight=balanced
+    CV acc 0.4989 ± 0.0039 | CV F1 0.3550 | train acc 0.8451 | gap 0.3462 | 14.6s
+(151/288) [RandomForest] max_features=0.4, min_samples_leaf=10, class_weight=None
+    CV acc 0.5628 ± 0.0058 | CV F1 0.3378 | train acc 0.6477 | gap 0.0849 | 15.2s
+(152/288) [RandomForest] max_features=0.4, min_samples_leaf=10, class_weight=balanced
+    CV acc 0.4898 ± 0.0041 | CV F1 0.3526 | train acc 0.7161 | gap 0.2263 | 13.5s
+(153/288) [RandomForest] max_features=0.4, min_samples_leaf=20, class_weight=None
+    CV acc 0.5528 ± 0.0039 | CV F1 0.3254 | train acc 0.6017 | gap 0.0489 | 13.8s
+(154/288) [RandomForest] max_features=0.4, min_samples_leaf=20, class_weight=balanced
+    CV acc 0.4815 ± 0.0015 | CV F1 0.3457 | train acc 0.5924 | gap 0.1109 | 12.3s
+(155/288) [RandomForest] max_features=0.4, min_samples_leaf=50, class_weight=None
+    CV acc 0.5366 ± 0.0037 | CV F1 0.2995 | train acc 0.5596 | gap 0.0230 | 12.2s
+(156/288) [RandomForest] max_features=0.4, min_samples_leaf=50, class_weight=balanced
+    CV acc 0.4669 ± 0.0031 | CV F1 0.3336 | train acc 0.5071 | gap 0.0402 | 10.8s
+(157/288) [RandomForest] max_features=0.7, min_samples_leaf=1, class_weight=None
+    CV acc 0.5748 ± 0.0053 | CV F1 0.3606 | train acc 1.0000 | gap 0.4252 | 30.3s
+(158/288) [RandomForest] max_features=0.7, min_samples_leaf=1, class_weight=balanced
+    CV acc 0.5124 ± 0.0049 | CV F1 0.3509 | train acc 0.9904 | gap 0.4781 | 26.0s
+(159/288) [RandomForest] max_features=0.7, min_samples_leaf=2, class_weight=None
+    CV acc 0.5775 ± 0.0054 | CV F1 0.3610 | train acc 0.9811 | gap 0.4036 | 28.6s
+(160/288) [RandomForest] max_features=0.7, min_samples_leaf=2, class_weight=balanced
+    CV acc 0.5084 ± 0.0034 | CV F1 0.3525 | train acc 0.9540 | gap 0.4456 | 24.8s
+(161/288) [RandomForest] max_features=0.7, min_samples_leaf=5, class_weight=None
+    CV acc 0.5725 ± 0.0054 | CV F1 0.3535 | train acc 0.7151 | gap 0.1426 | 25.8s
+(162/288) [RandomForest] max_features=0.7, min_samples_leaf=5, class_weight=balanced
+    CV acc 0.4937 ± 0.0043 | CV F1 0.3524 | train acc 0.8522 | gap 0.3585 | 22.0s
+(163/288) [RandomForest] max_features=0.7, min_samples_leaf=10, class_weight=None
+    CV acc 0.5641 ± 0.0070 | CV F1 0.3394 | train acc 0.6559 | gap 0.0917 | 23.4s
+(164/288) [RandomForest] max_features=0.7, min_samples_leaf=10, class_weight=balanced
+    CV acc 0.4847 ± 0.0048 | CV F1 0.3502 | train acc 0.7259 | gap 0.2412 | 20.0s
+(165/288) [RandomForest] max_features=0.7, min_samples_leaf=20, class_weight=None
+    CV acc 0.5529 ± 0.0045 | CV F1 0.3257 | train acc 0.6067 | gap 0.0538 | 21.1s
+(166/288) [RandomForest] max_features=0.7, min_samples_leaf=20, class_weight=balanced
+    CV acc 0.4742 ± 0.0051 | CV F1 0.3430 | train acc 0.5975 | gap 0.1233 | 18.1s
+(167/288) [RandomForest] max_features=0.7, min_samples_leaf=50, class_weight=None
+    CV acc 0.5373 ± 0.0044 | CV F1 0.3053 | train acc 0.5619 | gap 0.0246 | 18.2s
+(168/288) [RandomForest] max_features=0.7, min_samples_leaf=50, class_weight=balanced
+    CV acc 0.4646 ± 0.0035 | CV F1 0.3343 | train acc 0.5079 | gap 0.0433 | 15.5s
+(169/288) [Bagging] max_features=1.0, min_samples_leaf=1, class_weight=None
+    CV acc 0.5728 ± 0.0035 | CV F1 0.3598 | train acc 1.0000 | gap 0.4272 | 41.9s
+(170/288) [Bagging] max_features=1.0, min_samples_leaf=1, class_weight=balanced
+    CV acc 0.5087 ± 0.0046 | CV F1 0.3497 | train acc 0.9899 | gap 0.4812 | 35.7s
+(171/288) [Bagging] max_features=1.0, min_samples_leaf=2, class_weight=None
+    CV acc 0.5762 ± 0.0050 | CV F1 0.3599 | train acc 0.9841 | gap 0.4079 | 40.0s
+(172/288) [Bagging] max_features=1.0, min_samples_leaf=2, class_weight=balanced
+    CV acc 0.5063 ± 0.0051 | CV F1 0.3515 | train acc 0.9551 | gap 0.4488 | 33.6s
+(173/288) [Bagging] max_features=1.0, min_samples_leaf=5, class_weight=None
+    CV acc 0.5724 ± 0.0047 | CV F1 0.3523 | train acc 0.7203 | gap 0.1479 | 35.3s
+(174/288) [Bagging] max_features=1.0, min_samples_leaf=5, class_weight=balanced
+    CV acc 0.4917 ± 0.0059 | CV F1 0.3505 | train acc 0.8552 | gap 0.3635 | 29.9s
+(175/288) [Bagging] max_features=1.0, min_samples_leaf=10, class_weight=None
+    CV acc 0.5637 ± 0.0054 | CV F1 0.3395 | train acc 0.6592 | gap 0.0956 | 32.4s
+(176/288) [Bagging] max_features=1.0, min_samples_leaf=10, class_weight=balanced
+    CV acc 0.4816 ± 0.0042 | CV F1 0.3476 | train acc 0.7309 | gap 0.2493 | 27.0s
+(177/288) [Bagging] max_features=1.0, min_samples_leaf=20, class_weight=None
+    CV acc 0.5524 ± 0.0046 | CV F1 0.3267 | train acc 0.6080 | gap 0.0556 | 29.3s
+(178/288) [Bagging] max_features=1.0, min_samples_leaf=20, class_weight=balanced
+    CV acc 0.4723 ± 0.0062 | CV F1 0.3428 | train acc 0.6005 | gap 0.1283 | 24.3s
+(179/288) [Bagging] max_features=1.0, min_samples_leaf=50, class_weight=None
+    CV acc 0.5350 ± 0.0046 | CV F1 0.3022 | train acc 0.5617 | gap 0.0267 | 24.8s
+(180/288) [Bagging] max_features=1.0, min_samples_leaf=50, class_weight=balanced
+    CV acc 0.4603 ± 0.0050 | CV F1 0.3317 | train acc 0.5067 | gap 0.0464 | 20.6s
+(181/288) [AdaBoost] max_depth=1, n_estimators=50, learning_rate=0.1
+    CV acc 0.4838 ± 0.0031 | CV F1 0.2177 | train acc 0.4850 | gap 0.0012 | 2.4s
+(182/288) [AdaBoost] max_depth=1, n_estimators=50, learning_rate=0.5
+    CV acc 0.4837 ± 0.0028 | CV F1 0.2183 | train acc 0.4851 | gap 0.0014 | 2.5s
+(183/288) [AdaBoost] max_depth=1, n_estimators=50, learning_rate=1.0
+    CV acc 0.4842 ± 0.0034 | CV F1 0.2183 | train acc 0.4855 | gap 0.0013 | 2.4s
+(184/288) [AdaBoost] max_depth=1, n_estimators=200, learning_rate=0.1
+    CV acc 0.4837 ± 0.0031 | CV F1 0.2176 | train acc 0.4850 | gap 0.0013 | 9.2s
+(185/288) [AdaBoost] max_depth=1, n_estimators=200, learning_rate=0.5
+    CV acc 0.4852 ± 0.0030 | CV F1 0.2292 | train acc 0.4868 | gap 0.0017 | 9.0s
+(186/288) [AdaBoost] max_depth=1, n_estimators=200, learning_rate=1.0
+    CV acc 0.4892 ± 0.0042 | CV F1 0.2414 | train acc 0.4904 | gap 0.0013 | 8.9s
+(187/288) [AdaBoost] max_depth=1, n_estimators=500, learning_rate=0.1
+    CV acc 0.4841 ± 0.0029 | CV F1 0.2183 | train acc 0.4854 | gap 0.0012 | 21.7s
+(188/288) [AdaBoost] max_depth=1, n_estimators=500, learning_rate=0.5
+    CV acc 0.4875 ± 0.0043 | CV F1 0.2407 | train acc 0.4886 | gap 0.0010 | 21.4s
+(189/288) [AdaBoost] max_depth=1, n_estimators=500, learning_rate=1.0
+    CV acc 0.4904 ± 0.0037 | CV F1 0.2500 | train acc 0.4915 | gap 0.0011 | 21.4s
+(190/288) [AdaBoost] max_depth=3, n_estimators=50, learning_rate=0.1
+    CV acc 0.5021 ± 0.0046 | CV F1 0.2542 | train acc 0.5044 | gap 0.0022 | 4.6s
+(191/288) [AdaBoost] max_depth=3, n_estimators=50, learning_rate=0.5
+    CV acc 0.4972 ± 0.0026 | CV F1 0.2613 | train acc 0.5022 | gap 0.0050 | 4.7s
+(192/288) [AdaBoost] max_depth=3, n_estimators=50, learning_rate=1.0
+    CV acc 0.4983 ± 0.0049 | CV F1 0.2662 | train acc 0.5052 | gap 0.0069 | 4.7s
+(193/288) [AdaBoost] max_depth=3, n_estimators=200, learning_rate=0.1
+    CV acc 0.5056 ± 0.0058 | CV F1 0.2602 | train acc 0.5096 | gap 0.0039 | 18.3s
+(194/288) [AdaBoost] max_depth=3, n_estimators=200, learning_rate=0.5
+    CV acc 0.5018 ± 0.0034 | CV F1 0.2644 | train acc 0.5061 | gap 0.0043 | 18.3s
+(195/288) [AdaBoost] max_depth=3, n_estimators=200, learning_rate=1.0
+    CV acc 0.5046 ± 0.0044 | CV F1 0.2721 | train acc 0.5126 | gap 0.0079 | 18.3s
+(196/288) [AdaBoost] max_depth=3, n_estimators=500, learning_rate=0.1
+    CV acc 0.5075 ± 0.0050 | CV F1 0.2640 | train acc 0.5116 | gap 0.0041 | 45.2s
+(197/288) [AdaBoost] max_depth=3, n_estimators=500, learning_rate=0.5
+    CV acc 0.5033 ± 0.0043 | CV F1 0.2671 | train acc 0.5087 | gap 0.0054 | 45.2s
+(198/288) [AdaBoost] max_depth=3, n_estimators=500, learning_rate=1.0
+    CV acc 0.5071 ± 0.0047 | CV F1 0.2756 | train acc 0.5160 | gap 0.0089 | 45.1s
+(199/288) [AdaBoost] max_depth=6, n_estimators=50, learning_rate=0.1
+    CV acc 0.5249 ± 0.0042 | CV F1 0.2950 | train acc 0.5422 | gap 0.0173 | 7.8s
+(200/288) [AdaBoost] max_depth=6, n_estimators=50, learning_rate=0.5
+    CV acc 0.5128 ± 0.0050 | CV F1 0.2943 | train acc 0.5328 | gap 0.0200 | 8.2s
+(201/288) [AdaBoost] max_depth=6, n_estimators=50, learning_rate=1.0
+    CV acc 0.5093 ± 0.0052 | CV F1 0.2983 | train acc 0.5342 | gap 0.0249 | 8.1s
+(202/288) [AdaBoost] max_depth=6, n_estimators=200, learning_rate=0.1
+    CV acc 0.5256 ± 0.0046 | CV F1 0.2964 | train acc 0.5441 | gap 0.0186 | 32.1s
+(203/288) [AdaBoost] max_depth=6, n_estimators=200, learning_rate=0.5
+    CV acc 0.5155 ± 0.0048 | CV F1 0.2981 | train acc 0.5407 | gap 0.0252 | 32.2s
+(204/288) [AdaBoost] max_depth=6, n_estimators=200, learning_rate=1.0
+    CV acc 0.5133 ± 0.0062 | CV F1 0.3009 | train acc 0.5586 | gap 0.0453 | 31.7s
+(205/288) [AdaBoost] max_depth=6, n_estimators=500, learning_rate=0.1
+    CV acc 0.5263 ± 0.0045 | CV F1 0.2981 | train acc 0.5471 | gap 0.0208 | 80.1s
+(206/288) [AdaBoost] max_depth=6, n_estimators=500, learning_rate=0.5
+    CV acc 0.5198 ± 0.0032 | CV F1 0.3014 | train acc 0.5509 | gap 0.0311 | 80.5s
+(207/288) [AdaBoost] max_depth=6, n_estimators=500, learning_rate=1.0
+    CV acc 0.5179 ± 0.0035 | CV F1 0.3059 | train acc 0.5883 | gap 0.0704 | 79.0s
+(208/288) [AdaBoost] max_depth=10, n_estimators=50, learning_rate=0.1
+    CV acc 0.5477 ± 0.0059 | CV F1 0.3253 | train acc 0.6168 | gap 0.0691 | 11.9s
+(209/288) [AdaBoost] max_depth=10, n_estimators=50, learning_rate=0.5
+    CV acc 0.5309 ± 0.0060 | CV F1 0.3195 | train acc 0.6546 | gap 0.1237 | 12.3s
+(210/288) [AdaBoost] max_depth=10, n_estimators=50, learning_rate=1.0
+    CV acc 0.4927 ± 0.0067 | CV F1 0.2967 | train acc 0.7622 | gap 0.2695 | 12.0s
+(211/288) [AdaBoost] max_depth=10, n_estimators=200, learning_rate=0.1
+    CV acc 0.5484 ± 0.0049 | CV F1 0.3258 | train acc 0.6317 | gap 0.0833 | 49.7s
+(212/288) [AdaBoost] max_depth=10, n_estimators=200, learning_rate=0.5
+    CV acc 0.5385 ± 0.0059 | CV F1 0.3219 | train acc 0.7948 | gap 0.2563 | 48.8s
+(213/288) [AdaBoost] max_depth=10, n_estimators=200, learning_rate=1.0
+    CV acc 0.5285 ± 0.0041 | CV F1 0.3180 | train acc 0.9713 | gap 0.4428 | 47.5s
+(214/288) [AdaBoost] max_depth=10, n_estimators=500, learning_rate=0.1
+    CV acc 0.5503 ± 0.0058 | CV F1 0.3268 | train acc 0.6573 | gap 0.1070 | 125.1s
+(215/288) [AdaBoost] max_depth=10, n_estimators=500, learning_rate=0.5
+    CV acc 0.5453 ± 0.0048 | CV F1 0.3245 | train acc 0.9573 | gap 0.4119 | 122.2s
+(216/288) [AdaBoost] max_depth=10, n_estimators=500, learning_rate=1.0
+    CV acc 0.5437 ± 0.0042 | CV F1 0.3195 | train acc 0.9984 | gap 0.4547 | 119.5s
+(217/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5438 ± 0.0053 | CV F1 0.3236 | train acc 0.5777 | gap 0.0339 | 7.6s
+(218/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4746 ± 0.0033 | CV F1 0.3360 | train acc 0.5266 | gap 0.0520 | 6.5s
+(219/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5480 ± 0.0056 | CV F1 0.3296 | train acc 0.5824 | gap 0.0344 | 9.9s
+(220/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4756 ± 0.0030 | CV F1 0.3373 | train acc 0.5224 | gap 0.0468 | 6.2s
+(221/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5466 ± 0.0024 | CV F1 0.3283 | train acc 0.5762 | gap 0.0296 | 8.1s
+(222/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4673 ± 0.0025 | CV F1 0.3343 | train acc 0.5084 | gap 0.0410 | 6.1s
+(223/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5457 ± 0.0035 | CV F1 0.3282 | train acc 0.5786 | gap 0.0328 | 9.1s
+(224/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4687 ± 0.0045 | CV F1 0.3368 | train acc 0.5127 | gap 0.0440 | 7.1s
+(225/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5547 ± 0.0041 | CV F1 0.3367 | train acc 0.6082 | gap 0.0535 | 8.7s
+(226/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4850 ± 0.0022 | CV F1 0.3451 | train acc 0.5708 | gap 0.0858 | 6.6s
+(227/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5562 ± 0.0043 | CV F1 0.3381 | train acc 0.6082 | gap 0.0520 | 10.4s
+(228/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4834 ± 0.0023 | CV F1 0.3445 | train acc 0.5652 | gap 0.0818 | 7.5s
+(229/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5530 ± 0.0037 | CV F1 0.3345 | train acc 0.5937 | gap 0.0407 | 8.0s
+(230/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4724 ± 0.0038 | CV F1 0.3398 | train acc 0.5464 | gap 0.0740 | 7.0s
+(231/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5537 ± 0.0028 | CV F1 0.3354 | train acc 0.5955 | gap 0.0418 | 8.4s
+(232/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4740 ± 0.0035 | CV F1 0.3415 | train acc 0.5446 | gap 0.0706 | 7.0s
+(233/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5592 ± 0.0048 | CV F1 0.3413 | train acc 0.6380 | gap 0.0788 | 9.7s
+(234/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4916 ± 0.0047 | CV F1 0.3495 | train acc 0.6414 | gap 0.1498 | 8.5s
+(235/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5594 ± 0.0042 | CV F1 0.3417 | train acc 0.6290 | gap 0.0696 | 11.0s
+(236/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4877 ± 0.0030 | CV F1 0.3467 | train acc 0.6341 | gap 0.1464 | 9.7s
+(237/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5569 ± 0.0029 | CV F1 0.3375 | train acc 0.6109 | gap 0.0540 | 9.6s
+(238/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4717 ± 0.0030 | CV F1 0.3411 | train acc 0.6053 | gap 0.1336 | 8.2s
+(239/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5573 ± 0.0043 | CV F1 0.3371 | train acc 0.6127 | gap 0.0554 | 9.8s
+(240/288) [HistGradientBoosting] learning_rate=0.03, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4677 ± 0.0046 | CV F1 0.3380 | train acc 0.6052 | gap 0.1375 | 8.9s
+(241/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5497 ± 0.0019 | CV F1 0.3313 | train acc 0.5988 | gap 0.0491 | 3.7s
+(242/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4674 ± 0.0021 | CV F1 0.3349 | train acc 0.5446 | gap 0.0772 | 3.5s
+(243/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5492 ± 0.0036 | CV F1 0.3293 | train acc 0.5913 | gap 0.0421 | 3.7s
+(244/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4713 ± 0.0024 | CV F1 0.3387 | train acc 0.5329 | gap 0.0616 | 3.4s
+(245/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5484 ± 0.0012 | CV F1 0.3298 | train acc 0.5877 | gap 0.0393 | 3.5s
+(246/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4594 ± 0.0044 | CV F1 0.3326 | train acc 0.5181 | gap 0.0587 | 3.3s
+(247/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5491 ± 0.0020 | CV F1 0.3316 | train acc 0.5859 | gap 0.0368 | 3.6s
+(248/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4611 ± 0.0049 | CV F1 0.3331 | train acc 0.5204 | gap 0.0593 | 3.7s
+(249/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5554 ± 0.0044 | CV F1 0.3373 | train acc 0.6188 | gap 0.0634 | 3.2s
+(250/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4724 ± 0.0047 | CV F1 0.3381 | train acc 0.6014 | gap 0.1290 | 3.8s
+(251/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5563 ± 0.0043 | CV F1 0.3382 | train acc 0.6179 | gap 0.0616 | 4.1s
+(252/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4740 ± 0.0057 | CV F1 0.3416 | train acc 0.5863 | gap 0.1123 | 4.1s
+(253/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5545 ± 0.0024 | CV F1 0.3362 | train acc 0.6047 | gap 0.0501 | 3.2s
+(254/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4609 ± 0.0097 | CV F1 0.3357 | train acc 0.5622 | gap 0.1014 | 3.7s
+(255/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5547 ± 0.0032 | CV F1 0.3370 | train acc 0.6033 | gap 0.0486 | 3.3s
+(256/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4614 ± 0.0047 | CV F1 0.3368 | train acc 0.5581 | gap 0.0967 | 3.9s
+(257/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5596 ± 0.0030 | CV F1 0.3424 | train acc 0.6629 | gap 0.1033 | 3.9s
+(258/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4749 ± 0.0048 | CV F1 0.3387 | train acc 0.6882 | gap 0.2133 | 4.5s
+(259/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5597 ± 0.0042 | CV F1 0.3418 | train acc 0.6480 | gap 0.0883 | 4.3s
+(260/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4746 ± 0.0047 | CV F1 0.3400 | train acc 0.6679 | gap 0.1933 | 5.1s
+(261/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5582 ± 0.0011 | CV F1 0.3403 | train acc 0.6300 | gap 0.0718 | 3.9s
+(262/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4544 ± 0.0075 | CV F1 0.3332 | train acc 0.6346 | gap 0.1802 | 4.3s
+(263/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5579 ± 0.0033 | CV F1 0.3396 | train acc 0.6263 | gap 0.0684 | 3.6s
+(264/288) [HistGradientBoosting] learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4554 ± 0.0042 | CV F1 0.3332 | train acc 0.6420 | gap 0.1865 | 4.7s
+(265/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5423 ± 0.0051 | CV F1 0.3274 | train acc 0.6026 | gap 0.0604 | 1.4s
+(266/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4223 ± 0.0047 | CV F1 0.3117 | train acc 0.5322 | gap 0.1099 | 2.4s
+(267/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5458 ± 0.0038 | CV F1 0.3315 | train acc 0.5951 | gap 0.0493 | 1.5s
+(268/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4356 ± 0.0046 | CV F1 0.3223 | train acc 0.5342 | gap 0.0986 | 2.8s
+(269/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5443 ± 0.0038 | CV F1 0.3287 | train acc 0.5945 | gap 0.0502 | 1.6s
+(270/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4263 ± 0.0078 | CV F1 0.3199 | train acc 0.5179 | gap 0.0916 | 2.6s
+(271/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5443 ± 0.0026 | CV F1 0.3286 | train acc 0.5872 | gap 0.0429 | 1.6s
+(272/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=15, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4292 ± 0.0040 | CV F1 0.3216 | train acc 0.5200 | gap 0.0908 | 2.5s
+(273/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5387 ± 0.0041 | CV F1 0.3285 | train acc 0.6504 | gap 0.1117 | 1.6s
+(274/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4135 ± 0.0039 | CV F1 0.3098 | train acc 0.6053 | gap 0.1918 | 2.7s
+(275/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5501 ± 0.0034 | CV F1 0.3366 | train acc 0.6426 | gap 0.0925 | 1.9s
+(276/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4304 ± 0.0057 | CV F1 0.3208 | train acc 0.6107 | gap 0.1803 | 3.5s
+(277/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5489 ± 0.0018 | CV F1 0.3325 | train acc 0.6249 | gap 0.0760 | 1.6s
+(278/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4150 ± 0.0020 | CV F1 0.3116 | train acc 0.5780 | gap 0.1631 | 2.9s
+(279/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5470 ± 0.0023 | CV F1 0.3324 | train acc 0.6167 | gap 0.0697 | 1.6s
+(280/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=31, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4173 ± 0.0049 | CV F1 0.3141 | train acc 0.5776 | gap 0.1603 | 2.8s
+(281/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=None
+    CV acc 0.5385 ± 0.0056 | CV F1 0.3331 | train acc 0.7459 | gap 0.2074 | 2.3s
+(282/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4214 ± 0.0032 | CV F1 0.3066 | train acc 0.7245 | gap 0.3030 | 3.4s
+(283/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=None
+    CV acc 0.5483 ± 0.0025 | CV F1 0.3384 | train acc 0.7284 | gap 0.1801 | 2.7s
+(284/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4332 ± 0.0040 | CV F1 0.3145 | train acc 0.7248 | gap 0.2915 | 3.9s
+(285/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=None
+    CV acc 0.5466 ± 0.0039 | CV F1 0.3348 | train acc 0.6957 | gap 0.1491 | 2.2s
+(286/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=0.0, class_weight=balanced
+    CV acc 0.4184 ± 0.0058 | CV F1 0.3102 | train acc 0.6896 | gap 0.2712 | 3.4s
+(287/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=None
+    CV acc 0.5481 ± 0.0031 | CV F1 0.3394 | train acc 0.6895 | gap 0.1414 | 2.3s
+(288/288) [HistGradientBoosting] learning_rate=0.3, max_leaf_nodes=63, min_samples_leaf=100, l2_regularization=1.0, class_weight=balanced
+    CV acc 0.4191 ± 0.0084 | CV F1 0.3083 | train acc 0.6906 | gap 0.2715 | 3.7s
+
+========== 모델 계열별 최고 조합 (cv_acc_mean 기준) ==========
+               model                                                                                              params  cv_acc_mean  cv_acc_std  cv_f1_mean  train_acc_mean    gap
+        RandomForest                                             max_features=0.2, min_samples_leaf=2, class_weight=None       0.5786      0.0045      0.3575          0.9236 0.3450
+             Bagging                                             max_features=1.0, min_samples_leaf=2, class_weight=None       0.5762      0.0050      0.3599          0.9841 0.4079
+HistGradientBoosting learning_rate=0.1, max_leaf_nodes=63, min_samples_leaf=20, l2_regularization=1.0, class_weight=None       0.5597      0.0042      0.3418          0.6480 0.0883
+            AdaBoost                                                   max_depth=10, n_estimators=500, learning_rate=0.1       0.5503      0.0058      0.3268          0.6573 0.1070
+        DecisionTree                                max_depth=12, min_samples_leaf=20, criterion=gini, class_weight=None       0.5201      0.0050      0.3137          0.5739 0.0538
+            Baseline                                                                                        default=True       0.3880      0.0052      0.2585          1.0000 0.6120
+
+========== 전체 상위 10개 ==========
+       model                                                   params  cv_acc_mean  cv_acc_std  cv_f1_mean  train_acc_mean    gap
+RandomForest  max_features=0.2, min_samples_leaf=2, class_weight=None       0.5786      0.0045      0.3575          0.9236 0.3450
+RandomForest  max_features=0.4, min_samples_leaf=2, class_weight=None       0.5784      0.0038      0.3616          0.9709 0.3925
+RandomForest max_features=sqrt, min_samples_leaf=2, class_weight=None       0.5781      0.0043      0.3537          0.8783 0.3002
+RandomForest  max_features=0.7, min_samples_leaf=2, class_weight=None       0.5775      0.0054      0.3610          0.9811 0.4036
+RandomForest  max_features=0.2, min_samples_leaf=1, class_weight=None       0.5771      0.0028      0.3603          1.0000 0.4229
+     Bagging  max_features=1.0, min_samples_leaf=2, class_weight=None       0.5762      0.0050      0.3599          0.9841 0.4079
+RandomForest  max_features=0.4, min_samples_leaf=1, class_weight=None       0.5759      0.0043      0.3610          1.0000 0.4241
+RandomForest max_features=sqrt, min_samples_leaf=1, class_weight=None       0.5758      0.0040      0.3587          1.0000 0.4242
+RandomForest  max_features=0.7, min_samples_leaf=1, class_weight=None       0.5748      0.0053      0.3606          1.0000 0.4252
+     Bagging  max_features=1.0, min_samples_leaf=1, class_weight=None       0.5728      0.0035      0.3598          1.0000 0.4272
+
+========== 1단계 최고 설정으로 제출 파일 생성 (cv_acc_mean 기준) ==========
+[RandomForest] max_features=0.2, min_samples_leaf=2, class_weight=None
+Stage 1 best (cv_acc_mean 기준)
+model: RandomForest
+params: max_features=0.2, min_samples_leaf=2, class_weight=None
+5-fold CV accuracy: 0.5786 ± 0.0045
+5-fold CV macro F1: 0.3575 ± 0.0093
+train accuracy: 0.9236 (gap 0.3450)
+Kaggle public LB: (제출 후 직접 기록)
+
+Total time: 44.6 min
+Results: /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/results/stage1

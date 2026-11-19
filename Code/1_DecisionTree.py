@@ -13,7 +13,7 @@ random.seed(1)
 def main():
     data_name = 'TicTacToe'
     # =============================== EDIT HERE ===============================
-    max_tree_depth = 3
+    max_tree_depth = 6
     # =========================================================================
     
     print(f"> data_name: {data_name}")

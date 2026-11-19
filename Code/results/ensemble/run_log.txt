@@ -1,0 +1,12 @@
+RANDOM_STATE = 42
+NUM_TREES = [1, 10, 50]
+              model  n_estimators  train_accuracy  test_accuracy
+Single shallow tree             1          0.8267         0.8005
+   Single deep tree             1          1.0000         0.8880
+            Bagging             1          0.9533         0.9095
+           AdaBoost             1          0.8267         0.8005
+            Bagging            10          0.9800         0.9180
+           AdaBoost            10          0.9067         0.8870
+            Bagging            50          1.0000         0.9250
+           AdaBoost            50          0.9533         0.9360
+Fit/evaluation time: 0.139 s

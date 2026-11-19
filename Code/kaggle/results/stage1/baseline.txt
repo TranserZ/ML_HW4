@@ -1,0 +1,6 @@
+Baseline: DecisionTreeClassifier(random_state=42), 기본값
+(a) holdout 75/25 accuracy (notebook 방식): 0.3931
+(b) 5-fold CV accuracy: 0.3880 ± 0.0052
+    5-fold CV macro F1: 0.2585 ± 0.0035
+    train accuracy: 1.0000 (gap 0.6120)
+(c) Kaggle public LB: (제출 후 직접 기록)
