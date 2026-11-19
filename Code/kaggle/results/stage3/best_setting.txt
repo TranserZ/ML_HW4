@@ -1,0 +1,7 @@
+Stage 3 best (cv_acc_mean 기준, seed [42, 0, 1] x 5-fold)
+method: Stacking: RF+Bag+HGB+Ada
+CV accuracy: 0.5803 ± 0.0041
+CV macro F1: 0.3591 ± 0.0070
+RF 대비: +0.0007 (15개 fold 중 11번 RF보다 높음)
+submission: submissions/submission_stacking.csv
+Kaggle public LB: (제출 후 직접 기록)
