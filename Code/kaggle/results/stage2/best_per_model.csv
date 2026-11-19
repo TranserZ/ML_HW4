@@ -1,0 +1,3 @@
+model,params,cv_acc_mean,cv_acc_std,cv_f1_mean,cv_f1_std,train_acc_mean,gap,time_sec,n_estimators,max_features,min_samples_leaf,max_samples,criterion,learning_rate,max_leaf_nodes,l2_regularization
+RandomForest,"n_estimators=1000, max_features=0.2, min_samples_leaf=2, max_samples=None, criterion=entropy",0.5799333333333333,0.005635798277282658,0.3582012864908132,0.009629985287076445,0.9390083333333334,0.35907500000000014,65.69380398697103,1000.0,0.2,2,,entropy,,,
+HistGradientBoosting,"learning_rate=0.03, max_leaf_nodes=255, min_samples_leaf=5, l2_regularization=0.0, max_features=0.5",0.5722666666666667,0.004831148931672469,0.35059040476635006,0.010502085143414363,0.8508666666666667,0.27859999999999996,29.854933827999048,,0.5,5,,,0.03,255.0,0.0

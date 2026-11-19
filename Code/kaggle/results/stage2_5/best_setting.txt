@@ -1,0 +1,7 @@
+Stage 2.5 best (cv_acc_mean 기준)
+model: Bagging
+params: n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini
+5-fold CV accuracy: 0.5762 ± 0.0050
+5-fold CV macro F1: 0.3599 ± 0.0078
+train accuracy: 0.9841 (gap 0.4079)
+Kaggle public LB: (제출 후 직접 기록)

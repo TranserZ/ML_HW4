@@ -1,0 +1,123 @@
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+========== 1) Bagging: 24개 조합 ==========
+(1/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=None, criterion=gini
+    CV acc 0.5728 ± 0.0035 | CV F1 0.3598 | train acc 1.0000 | gap 0.4272 | 41.5s
+(2/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=None, criterion=entropy
+    CV acc 0.5709 ± 0.0059 | CV F1 0.3576 | train acc 1.0000 | gap 0.4291 | 77.2s
+(3/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.8, criterion=gini
+    CV acc 0.5747 ± 0.0050 | CV F1 0.3601 | train acc 1.0000 | gap 0.4253 | 36.0s
+(4/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.8, criterion=entropy
+    CV acc 0.5720 ± 0.0063 | CV F1 0.3578 | train acc 1.0000 | gap 0.4280 | 66.4s
+(5/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.6, criterion=gini
+    CV acc 0.5742 ± 0.0050 | CV F1 0.3584 | train acc 0.9934 | gap 0.4191 | 29.1s
+(6/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.6, criterion=entropy
+    CV acc 0.5714 ± 0.0060 | CV F1 0.3551 | train acc 0.9951 | gap 0.4237 | 52.3s
+(7/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini
+    CV acc 0.5762 ± 0.0050 | CV F1 0.3599 | train acc 0.9841 | gap 0.4079 | 39.4s
+(8/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=entropy
+    CV acc 0.5724 ± 0.0062 | CV F1 0.3576 | train acc 0.9963 | gap 0.4240 | 74.4s
+(9/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=0.8, criterion=gini
+    CV acc 0.5742 ± 0.0061 | CV F1 0.3570 | train acc 0.9399 | gap 0.3656 | 33.8s
+(10/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=0.8, criterion=entropy
+    CV acc 0.5715 ± 0.0067 | CV F1 0.3549 | train acc 0.9726 | gap 0.4011 | 64.2s
+(11/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=0.6, criterion=gini
+    CV acc 0.5726 ± 0.0051 | CV F1 0.3550 | train acc 0.8438 | gap 0.2713 | 27.4s
+(12/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=0.6, criterion=entropy
+    CV acc 0.5698 ± 0.0077 | CV F1 0.3524 | train acc 0.8835 | gap 0.3137 | 51.3s
+(13/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=None, criterion=gini
+    CV acc 0.5748 ± 0.0052 | CV F1 0.3573 | train acc 0.8563 | gap 0.2815 | 37.8s
+(14/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=None, criterion=entropy
+    CV acc 0.5718 ± 0.0064 | CV F1 0.3551 | train acc 0.9070 | gap 0.3352 | 72.5s
+(15/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=0.8, criterion=gini
+    CV acc 0.5737 ± 0.0055 | CV F1 0.3550 | train acc 0.7940 | gap 0.2203 | 32.3s
+(16/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=0.8, criterion=entropy
+    CV acc 0.5713 ± 0.0082 | CV F1 0.3532 | train acc 0.8354 | gap 0.2641 | 62.0s
+(17/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=0.6, criterion=gini
+    CV acc 0.5711 ± 0.0057 | CV F1 0.3519 | train acc 0.7330 | gap 0.1619 | 26.0s
+(18/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=0.6, criterion=entropy
+    CV acc 0.5670 ± 0.0068 | CV F1 0.3481 | train acc 0.7534 | gap 0.1864 | 49.1s
+(19/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=None, criterion=gini
+    CV acc 0.5733 ± 0.0041 | CV F1 0.3540 | train acc 0.7596 | gap 0.1863 | 37.0s
+(20/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=None, criterion=entropy
+    CV acc 0.5706 ± 0.0058 | CV F1 0.3531 | train acc 0.7883 | gap 0.2177 | 70.6s
+(21/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=0.8, criterion=gini
+    CV acc 0.5725 ± 0.0055 | CV F1 0.3533 | train acc 0.7276 | gap 0.1551 | 31.3s
+(22/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=0.8, criterion=entropy
+    CV acc 0.5693 ± 0.0067 | CV F1 0.3493 | train acc 0.7433 | gap 0.1740 | 60.7s
+(23/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=0.6, criterion=gini
+    CV acc 0.5692 ± 0.0058 | CV F1 0.3497 | train acc 0.6978 | gap 0.1286 | 25.2s
+(24/24) [Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=4, max_samples=0.6, criterion=entropy
+    CV acc 0.5638 ± 0.0074 | CV F1 0.3441 | train acc 0.7047 | gap 0.1409 | 48.7s
+========== 2) AdaBoost: 18개 조합 ==========
+(1/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=1, learning_rate=0.03
+    CV acc 0.5507 ± 0.0072 | CV F1 0.3277 | train acc 0.6238 | gap 0.0731 | 72.6s
+(2/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=1, learning_rate=0.1
+    CV acc 0.5491 ± 0.0061 | CV F1 0.3261 | train acc 0.6426 | gap 0.0935 | 75.2s
+(3/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=5, learning_rate=0.03
+    CV acc 0.5509 ± 0.0067 | CV F1 0.3275 | train acc 0.6161 | gap 0.0653 | 71.9s
+(4/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=5, learning_rate=0.1
+    CV acc 0.5518 ± 0.0037 | CV F1 0.3305 | train acc 0.6288 | gap 0.0771 | 73.9s
+(5/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=20, learning_rate=0.03
+    CV acc 0.5496 ± 0.0053 | CV F1 0.3274 | train acc 0.6000 | gap 0.0503 | 69.9s
+(6/18) [AdaBoost] n_estimators=300, max_depth=10, min_samples_leaf=20, learning_rate=0.1
+    CV acc 0.5517 ± 0.0042 | CV F1 0.3326 | train acc 0.6081 | gap 0.0563 | 72.2s
+(7/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=1, learning_rate=0.03
+    CV acc 0.5617 ± 0.0048 | CV F1 0.3422 | train acc 0.8765 | gap 0.3147 | 99.8s
+(8/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=1, learning_rate=0.1
+    CV acc 0.5615 ± 0.0033 | CV F1 0.3380 | train acc 0.9879 | gap 0.4264 | 104.3s
+(9/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=5, learning_rate=0.03
+    CV acc 0.5637 ± 0.0066 | CV F1 0.3435 | train acc 0.8307 | gap 0.2670 | 95.0s
+(10/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=5, learning_rate=0.1
+    CV acc 0.5675 ± 0.0050 | CV F1 0.3453 | train acc 0.9587 | gap 0.3912 | 98.7s
+(11/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=20, learning_rate=0.03
+    CV acc 0.5629 ± 0.0050 | CV F1 0.3446 | train acc 0.7060 | gap 0.1431 | 88.0s
+(12/18) [AdaBoost] n_estimators=300, max_depth=15, min_samples_leaf=20, learning_rate=0.1
+    CV acc 0.5644 ± 0.0053 | CV F1 0.3463 | train acc 0.8078 | gap 0.2434 | 91.3s
+(13/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=1, learning_rate=0.03
+    CV acc 0.5525 ± 0.0033 | CV F1 0.3293 | train acc 1.0000 | gap 0.4475 | 119.1s
+(14/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=1, learning_rate=0.1
+    CV acc 0.5667 ± 0.0038 | CV F1 0.3434 | train acc 1.0000 | gap 0.4333 | 125.1s
+(15/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.03
+    CV acc 0.5663 ± 0.0048 | CV F1 0.3501 | train acc 1.0000 | gap 0.4336 | 107.9s
+(16/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.1
+    CV acc 0.5694 ± 0.0027 | CV F1 0.3526 | train acc 1.0000 | gap 0.4306 | 109.1s
+(17/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=20, learning_rate=0.03
+    CV acc 0.5683 ± 0.0048 | CV F1 0.3536 | train acc 0.8440 | gap 0.2757 | 97.4s
+(18/18) [AdaBoost] n_estimators=300, max_depth=20, min_samples_leaf=20, learning_rate=0.1
+    CV acc 0.5659 ± 0.0036 | CV F1 0.3513 | train acc 0.9850 | gap 0.4191 | 100.3s
+
+========== 모델 계열별 최고 조합 (cv_acc_mean 기준) ==========
+   model                                                                                   params  cv_acc_mean  cv_acc_std  cv_f1_mean  train_acc_mean    gap
+ Bagging n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini       0.5762      0.0050      0.3599          0.9841 0.4079
+AdaBoost                    n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.1       0.5694      0.0027      0.3526          1.0000 0.4306
+
+========== 모델별 상위 5개 ==========
+   model                                                                                   params  cv_acc_mean  cv_acc_std  cv_f1_mean  train_acc_mean    gap
+ Bagging n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini       0.5762      0.0050      0.3599          0.9841 0.4079
+ Bagging n_estimators=300, max_features=1.0, min_samples_leaf=3, max_samples=None, criterion=gini       0.5748      0.0052      0.3573          0.8563 0.2815
+ Bagging  n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.8, criterion=gini       0.5747      0.0050      0.3601          1.0000 0.4253
+ Bagging  n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=0.8, criterion=gini       0.5742      0.0061      0.3570          0.9399 0.3656
+ Bagging  n_estimators=300, max_features=1.0, min_samples_leaf=1, max_samples=0.6, criterion=gini       0.5742      0.0050      0.3584          0.9934 0.4191
+AdaBoost                    n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.1       0.5694      0.0027      0.3526          1.0000 0.4306
+AdaBoost                  n_estimators=300, max_depth=20, min_samples_leaf=20, learning_rate=0.03       0.5683      0.0048      0.3536          0.8440 0.2757
+AdaBoost                    n_estimators=300, max_depth=15, min_samples_leaf=5, learning_rate=0.1       0.5675      0.0050      0.3453          0.9587 0.3912
+AdaBoost                    n_estimators=300, max_depth=20, min_samples_leaf=1, learning_rate=0.1       0.5667      0.0038      0.3434          1.0000 0.4333
+AdaBoost                   n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.03       0.5663      0.0048      0.3501          1.0000 0.4336
+
+========== 1단계 대비 (cv_acc_mean) ==========
+Bagging: 1단계 0.5762 -> 2.5단계 0.5762 (+0.0000)
+AdaBoost: 1단계 0.5503 -> 2.5단계 0.5694 (+0.0191)
+
+========== 2.5단계 최고 설정으로 제출 파일 생성 (cv_acc_mean 기준) ==========
+[Bagging] n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini
+Stage 2.5 best (cv_acc_mean 기준)
+model: Bagging
+params: n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini
+5-fold CV accuracy: 0.5762 ± 0.0050
+5-fold CV macro F1: 0.3599 ± 0.0078
+train accuracy: 0.9841 (gap 0.4079)
+Kaggle public LB: (제출 후 직접 기록)
+
+Total time: 47.3 min
+Results: /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/results/stage2_5

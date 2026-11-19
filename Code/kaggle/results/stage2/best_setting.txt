@@ -1,0 +1,7 @@
+Stage 2 best (cv_acc_mean 기준)
+model: RandomForest
+params: n_estimators=1000, max_features=0.2, min_samples_leaf=2, max_samples=None, criterion=entropy
+5-fold CV accuracy: 0.5799 ± 0.0056
+5-fold CV macro F1: 0.3582 ± 0.0096
+train accuracy: 0.9390 (gap 0.3591)
+Kaggle public LB: (제출 후 직접 기록)

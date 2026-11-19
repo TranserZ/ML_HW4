@@ -1,0 +1,3 @@
+model,params,cv_acc_mean,cv_acc_std,cv_f1_mean,cv_f1_std,train_acc_mean,gap,time_sec,n_estimators,max_features,min_samples_leaf,max_samples,criterion,max_depth,learning_rate
+Bagging,"n_estimators=300, max_features=1.0, min_samples_leaf=2, max_samples=None, criterion=gini",0.5761999999999999,0.00502372150678937,0.3599059708083584,0.007847613554207038,0.9840916666666667,0.40789166666666676,39.44828879699344,300,1.0,2,,gini,,
+AdaBoost,"n_estimators=300, max_depth=20, min_samples_leaf=5, learning_rate=0.1",0.5694,0.0027296723450097667,0.35263103327835965,0.004571547559306461,1.0,0.4306,109.07952323500649,300,,5,,,20.0,0.1

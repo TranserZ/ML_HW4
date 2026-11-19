@@ -1,0 +1,4 @@
+cd ML_HW4
+source .venv/bin/activate
+cd Code
+python 0_MLP.py
