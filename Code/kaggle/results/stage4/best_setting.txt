@@ -1,0 +1,24 @@
+Stage 4 best (cv_acc_mean 기준)
+model: ExtraTrees
+params: features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+5-fold CV accuracy: 0.6002 ± 0.0033
+5-fold CV macro F1: 0.3841 ± 0.0061
+train accuracy: 0.7887 (gap 0.1884)
+Kaggle public LB: (제출 후 직접 기록)
+
+feature 중요도 상위 15개:
+Elev_minus_HHyd                      0.0951
+Elev_minus_VHyd                      0.0797
+Elevation                            0.0682
+Fire_minus_Road                      0.0388
+Aspect_cos                           0.0384
+Fire_plus_Road                       0.0358
+Hyd_minus_Road                       0.0353
+Horizontal_Distance_To_Roadways      0.0345
+Hyd_plus_Road                        0.0341
+Hyd_minus_Fire                       0.0335
+Horizontal_Distance_To_Fire_Points   0.0333
+Hyd_plus_Fire                        0.0332
+Horizontal_Distance_To_Hydrology     0.0323
+Hyd_distance                         0.0322
+Vertical_Distance_To_Hydrology       0.0301

@@ -1,0 +1,277 @@
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+A_original: feature 54개
+B_compress: feature 12개
+C_fe: feature 66개
+D_compress_fe: feature 24개
+========== A_original: 25개 조합 ==========
+(1/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5789 ± 0.0047 | CV F1 0.3607 | train acc 1.0000 | gap 0.4211 | 18.7s
+===== 재시작 2026-11-19 14:23:23 =====
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+A_original: feature 54개
+B_compress: feature 12개
+C_fe: feature 66개
+D_compress_fe: feature 24개
+========== A_original: 25개 조합 ==========
+(2/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5608 ± 0.0025 | CV F1 0.3541 | train acc 1.0000 | gap 0.4392 | 16.9s
+(3/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5795 ± 0.0048 | CV F1 0.3584 | train acc 0.9353 | gap 0.3558 | 18.5s
+(4/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5771 ± 0.0032 | CV F1 0.3518 | train acc 0.7580 | gap 0.1809 | 10.1s
+(5/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5738 ± 0.0049 | CV F1 0.3482 | train acc 0.7049 | gap 0.1311 | 18.1s
+(6/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5600 ± 0.0040 | CV F1 0.3252 | train acc 0.6211 | gap 0.0611 | 8.5s
+(7/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5777 ± 0.0034 | CV F1 0.3616 | train acc 1.0000 | gap 0.4223 | 31.6s
+(8/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5601 ± 0.0027 | CV F1 0.3549 | train acc 1.0000 | gap 0.4399 | 14.8s
+(9/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5794 ± 0.0045 | CV F1 0.3608 | train acc 0.9807 | gap 0.4013 | 31.3s
+(10/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5843 ± 0.0044 | CV F1 0.3691 | train acc 0.9489 | gap 0.3646 | 12.3s
+(11/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5749 ± 0.0056 | CV F1 0.3541 | train acc 0.7374 | gap 0.1625 | 28.5s
+(12/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5767 ± 0.0043 | CV F1 0.3514 | train acc 0.6747 | gap 0.0980 | 10.8s
+(13/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5755 ± 0.0036 | CV F1 0.3613 | train acc 1.0000 | gap 0.4245 | 43.4s
+(14/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5591 ± 0.0033 | CV F1 0.3566 | train acc 1.0000 | gap 0.4409 | 17.2s
+(15/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5770 ± 0.0055 | CV F1 0.3609 | train acc 0.9906 | gap 0.4137 | 42.8s
+(16/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5847 ± 0.0036 | CV F1 0.3718 | train acc 0.9917 | gap 0.4070 | 14.7s
+(17/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5738 ± 0.0057 | CV F1 0.3549 | train acc 0.7561 | gap 0.1823 | 39.6s
+(18/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5816 ± 0.0052 | CV F1 0.3615 | train acc 0.7100 | gap 0.1284 | 12.6s
+(19/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5738 ± 0.0046 | CV F1 0.3591 | train acc 1.0000 | gap 0.4262 | 55.9s
+(20/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5581 ± 0.0026 | CV F1 0.3560 | train acc 1.0000 | gap 0.4419 | 18.2s
+(21/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5761 ± 0.0067 | CV F1 0.3603 | train acc 0.9941 | gap 0.4180 | 54.3s
+(22/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5820 ± 0.0027 | CV F1 0.3701 | train acc 0.9976 | gap 0.4156 | 16.8s
+(23/25) [RandomForest] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5721 ± 0.0060 | CV F1 0.3540 | train acc 0.7707 | gap 0.1985 | 51.1s
+(24/25) [ExtraTrees] features=A_original, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5827 ± 0.0056 | CV F1 0.3661 | train acc 0.7340 | gap 0.1513 | 14.7s
+(25/25) [HistGradientBoosting] features=A_original
+    CV acc 0.5723 ± 0.0048 | CV F1 0.3506 | train acc 0.8509 | gap 0.2786 | 30.0s
+========== B_compress: 25개 조합 ==========
+(1/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5715 ± 0.0048 | CV F1 0.3521 | train acc 1.0000 | gap 0.4285 | 15.9s
+(2/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5635 ± 0.0025 | CV F1 0.3503 | train acc 1.0000 | gap 0.4365 | 9.0s
+(3/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5717 ± 0.0044 | CV F1 0.3492 | train acc 0.9616 | gap 0.3899 | 14.9s
+(4/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5747 ± 0.0029 | CV F1 0.3441 | train acc 0.8317 | gap 0.2570 | 4.3s
+(5/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5654 ± 0.0048 | CV F1 0.3389 | train acc 0.7168 | gap 0.1514 | 13.5s
+(6/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5593 ± 0.0031 | CV F1 0.3153 | train acc 0.6381 | gap 0.0788 | 3.0s
+(7/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5749 ± 0.0041 | CV F1 0.3601 | train acc 1.0000 | gap 0.4251 | 26.6s
+(8/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5666 ± 0.0016 | CV F1 0.3599 | train acc 1.0000 | gap 0.4334 | 8.0s
+(9/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5759 ± 0.0040 | CV F1 0.3585 | train acc 0.9838 | gap 0.4080 | 25.6s
+(10/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5868 ± 0.0034 | CV F1 0.3671 | train acc 0.9834 | gap 0.3966 | 6.2s
+(11/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5722 ± 0.0052 | CV F1 0.3517 | train acc 0.7404 | gap 0.1682 | 23.8s
+(12/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5785 ± 0.0032 | CV F1 0.3516 | train acc 0.6916 | gap 0.1130 | 4.2s
+(13/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5746 ± 0.0053 | CV F1 0.3610 | train acc 1.0000 | gap 0.4254 | 37.7s
+(14/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5659 ± 0.0024 | CV F1 0.3595 | train acc 1.0000 | gap 0.4341 | 9.0s
+(15/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5760 ± 0.0060 | CV F1 0.3608 | train acc 0.9904 | gap 0.4144 | 36.5s
+(16/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5872 ± 0.0021 | CV F1 0.3711 | train acc 0.9956 | gap 0.4085 | 7.2s
+(17/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5735 ± 0.0054 | CV F1 0.3552 | train acc 0.7566 | gap 0.1832 | 34.3s
+(18/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5844 ± 0.0050 | CV F1 0.3610 | train acc 0.7154 | gap 0.1310 | 5.2s
+(19/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5723 ± 0.0048 | CV F1 0.3609 | train acc 1.0000 | gap 0.4277 | 49.4s
+(20/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5641 ± 0.0034 | CV F1 0.3586 | train acc 1.0000 | gap 0.4359 | 10.0s
+(21/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5749 ± 0.0061 | CV F1 0.3609 | train acc 0.9936 | gap 0.4187 | 47.3s
+(22/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5853 ± 0.0034 | CV F1 0.3717 | train acc 0.9984 | gap 0.4131 | 8.0s
+(23/25) [RandomForest] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5736 ± 0.0062 | CV F1 0.3564 | train acc 0.7695 | gap 0.1959 | 44.7s
+(24/25) [ExtraTrees] features=B_compress, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5854 ± 0.0043 | CV F1 0.3652 | train acc 0.7338 | gap 0.1484 | 6.1s
+(25/25) [HistGradientBoosting] features=B_compress
+    CV acc 0.5701 ± 0.0053 | CV F1 0.3503 | train acc 0.8538 | gap 0.2837 | 13.2s
+========== C_fe: 25개 조합 ==========
+(1/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5902 ± 0.0037 | CV F1 0.3748 | train acc 1.0000 | gap 0.4098 | 37.0s
+(2/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5738 ± 0.0033 | CV F1 0.3687 | train acc 1.0000 | gap 0.4262 | 17.2s
+(3/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5924 ± 0.0038 | CV F1 0.3743 | train acc 0.9857 | gap 0.3932 | 35.2s
+(4/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5991 ± 0.0039 | CV F1 0.3829 | train acc 0.9805 | gap 0.3814 | 15.7s
+(5/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5864 ± 0.0045 | CV F1 0.3654 | train acc 0.7469 | gap 0.1605 | 33.4s
+(6/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5922 ± 0.0038 | CV F1 0.3686 | train acc 0.7014 | gap 0.1092 | 12.7s
+(7/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5889 ± 0.0024 | CV F1 0.3752 | train acc 1.0000 | gap 0.4111 | 60.0s
+(8/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5713 ± 0.0035 | CV F1 0.3673 | train acc 1.0000 | gap 0.4287 | 19.3s
+(9/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5904 ± 0.0030 | CV F1 0.3741 | train acc 0.9941 | gap 0.4037 | 57.8s
+(10/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5963 ± 0.0029 | CV F1 0.3828 | train acc 0.9981 | gap 0.4019 | 18.1s
+(11/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5866 ± 0.0043 | CV F1 0.3672 | train acc 0.7724 | gap 0.1858 | 54.8s
+(12/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5986 ± 0.0040 | CV F1 0.3811 | train acc 0.7395 | gap 0.1408 | 16.1s
+(13/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5876 ± 0.0035 | CV F1 0.3726 | train acc 1.0000 | gap 0.4124 | 82.8s
+(14/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5706 ± 0.0048 | CV F1 0.3664 | train acc 1.0000 | gap 0.4294 | 22.6s
+(15/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5894 ± 0.0039 | CV F1 0.3731 | train acc 0.9962 | gap 0.4068 | 80.4s
+(16/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5948 ± 0.0031 | CV F1 0.3820 | train acc 0.9996 | gap 0.4049 | 20.8s
+(17/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5862 ± 0.0041 | CV F1 0.3668 | train acc 0.7878 | gap 0.2016 | 76.4s
+(18/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5997 ± 0.0032 | CV F1 0.3825 | train acc 0.7647 | gap 0.1650 | 19.2s
+(19/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5868 ± 0.0032 | CV F1 0.3728 | train acc 1.0000 | gap 0.4132 | 113.4s
+(20/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5717 ± 0.0045 | CV F1 0.3681 | train acc 1.0000 | gap 0.4283 | 26.7s
+(21/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5887 ± 0.0015 | CV F1 0.3714 | train acc 0.9975 | gap 0.4088 | 109.6s
+(22/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5932 ± 0.0033 | CV F1 0.3815 | train acc 0.9998 | gap 0.4066 | 24.6s
+(23/25) [RandomForest] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5844 ± 0.0044 | CV F1 0.3647 | train acc 0.7999 | gap 0.2155 | 104.0s
+(24/25) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.6002 ± 0.0033 | CV F1 0.3841 | train acc 0.7887 | gap 0.1884 | 22.2s
+(25/25) [HistGradientBoosting] features=C_fe
+    CV acc 0.5832 ± 0.0033 | CV F1 0.3632 | train acc 0.8748 | gap 0.2916 | 36.1s
+========== D_compress_fe: 25개 조합 ==========
+(1/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5879 ± 0.0045 | CV F1 0.3726 | train acc 1.0000 | gap 0.4121 | 28.8s
+(2/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=1
+    CV acc 0.5792 ± 0.0037 | CV F1 0.3709 | train acc 1.0000 | gap 0.4208 | 9.2s
+(3/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5897 ± 0.0043 | CV F1 0.3732 | train acc 0.9840 | gap 0.3944 | 27.6s
+(4/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2
+    CV acc 0.5981 ± 0.0034 | CV F1 0.3778 | train acc 0.9861 | gap 0.3879 | 7.4s
+(5/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5840 ± 0.0051 | CV F1 0.3631 | train acc 0.7446 | gap 0.1607 | 25.7s
+(6/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=4
+    CV acc 0.5871 ± 0.0034 | CV F1 0.3610 | train acc 0.7010 | gap 0.1139 | 5.0s
+(7/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5872 ± 0.0037 | CV F1 0.3738 | train acc 1.0000 | gap 0.4128 | 53.5s
+(8/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=1
+    CV acc 0.5771 ± 0.0038 | CV F1 0.3725 | train acc 1.0000 | gap 0.4229 | 11.1s
+(9/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5887 ± 0.0044 | CV F1 0.3737 | train acc 0.9939 | gap 0.4051 | 51.4s
+(10/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2
+    CV acc 0.5971 ± 0.0019 | CV F1 0.3825 | train acc 0.9990 | gap 0.4018 | 9.1s
+(11/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5848 ± 0.0048 | CV F1 0.3677 | train acc 0.7708 | gap 0.1860 | 49.4s
+(12/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4
+    CV acc 0.5957 ± 0.0034 | CV F1 0.3751 | train acc 0.7396 | gap 0.1438 | 6.8s
+(13/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5850 ± 0.0037 | CV F1 0.3734 | train acc 1.0000 | gap 0.4150 | 78.6s
+(14/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=1
+    CV acc 0.5767 ± 0.0034 | CV F1 0.3719 | train acc 1.0000 | gap 0.4233 | 13.2s
+(15/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5872 ± 0.0041 | CV F1 0.3734 | train acc 0.9961 | gap 0.4089 | 75.7s
+(16/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=2
+    CV acc 0.5952 ± 0.0015 | CV F1 0.3820 | train acc 0.9998 | gap 0.4047 | 11.0s
+(17/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5849 ± 0.0051 | CV F1 0.3676 | train acc 0.7873 | gap 0.2023 | 71.5s
+(18/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4
+    CV acc 0.5958 ± 0.0044 | CV F1 0.3793 | train acc 0.7674 | gap 0.1716 | 8.5s
+(19/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5846 ± 0.0038 | CV F1 0.3738 | train acc 1.0000 | gap 0.4154 | 102.3s
+(20/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=1
+    CV acc 0.5748 ± 0.0025 | CV F1 0.3707 | train acc 1.0000 | gap 0.4252 | 15.1s
+(21/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5877 ± 0.0039 | CV F1 0.3743 | train acc 0.9973 | gap 0.4096 | 99.0s
+(22/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2
+    CV acc 0.5942 ± 0.0014 | CV F1 0.3834 | train acc 0.9999 | gap 0.4057 | 12.7s
+(23/25) [RandomForest] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5850 ± 0.0060 | CV F1 0.3689 | train acc 0.7978 | gap 0.2128 | 94.3s
+(24/25) [ExtraTrees] features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.5968 ± 0.0031 | CV F1 0.3815 | train acc 0.7887 | gap 0.1919 | 10.0s
+(25/25) [HistGradientBoosting] features=D_compress_fe
+    CV acc 0.5815 ± 0.0036 | CV F1 0.3618 | train acc 0.8880 | gap 0.3064 | 16.2s
+
+========== feature 세트 x 모델별 최고 cv_acc_mean ==========
+model          ExtraTrees  HistGradientBoosting  RandomForest
+features                                                     
+A_original         0.5847                0.5723        0.5795
+B_compress         0.5872                0.5701        0.5760
+C_fe               0.6002                0.5832        0.5924
+D_compress_fe      0.5981                0.5815        0.5897
+
+========== 기준(A_original + RandomForest = 0.5795) 대비 변화 ==========
+model          ExtraTrees  HistGradientBoosting  RandomForest
+features                                                     
+A_original        +0.0052               -0.0072       +0.0000
+B_compress        +0.0077               -0.0094       -0.0035
+C_fe              +0.0208               +0.0037       +0.0130
+D_compress_fe     +0.0187               +0.0021       +0.0102
+
+========== 전체 상위 10개 ==========
+     model                                                                          params  cv_acc_mean  cv_acc_std  cv_f1_mean  train_acc_mean    gap
+ExtraTrees           features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4       0.6002      0.0033      0.3841          0.7887 0.1884
+ExtraTrees           features=C_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4       0.5997      0.0032      0.3825          0.7647 0.1650
+ExtraTrees           features=C_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2       0.5991      0.0039      0.3829          0.9805 0.3814
+ExtraTrees          features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4       0.5986      0.0040      0.3811          0.7395 0.1408
+ExtraTrees  features=D_compress_fe, n_estimators=300, max_features=0.2, min_samples_leaf=2       0.5981      0.0034      0.3778          0.9861 0.3879
+ExtraTrees features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2       0.5971      0.0019      0.3825          0.9990 0.4018
+ExtraTrees  features=D_compress_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4       0.5968      0.0031      0.3815          0.7887 0.1919
+ExtraTrees          features=C_fe, n_estimators=300, max_features=0.35, min_samples_leaf=2       0.5963      0.0029      0.3828          0.9981 0.4019
+ExtraTrees  features=D_compress_fe, n_estimators=300, max_features=0.5, min_samples_leaf=4       0.5958      0.0044      0.3793          0.7674 0.1716
+ExtraTrees features=D_compress_fe, n_estimators=300, max_features=0.35, min_samples_leaf=4       0.5957      0.0034      0.3751          0.7396 0.1438
+
+========== 4단계 최고 설정으로 제출 파일 생성 (cv_acc_mean 기준) ==========
+[ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+Stage 4 best (cv_acc_mean 기준)
+model: ExtraTrees
+params: features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+5-fold CV accuracy: 0.6002 ± 0.0033
+5-fold CV macro F1: 0.3841 ± 0.0061
+train accuracy: 0.7887 (gap 0.1884)
+Kaggle public LB: (제출 후 직접 기록)
+
+feature 중요도 상위 15개:
+Elev_minus_HHyd                      0.0951
+Elev_minus_VHyd                      0.0797
+Elevation                            0.0682
+Fire_minus_Road                      0.0388
+Aspect_cos                           0.0384
+Fire_plus_Road                       0.0358
+Hyd_minus_Road                       0.0353
+Horizontal_Distance_To_Roadways      0.0345
+Hyd_plus_Road                        0.0341
+Hyd_minus_Fire                       0.0335
+Horizontal_Distance_To_Fire_Points   0.0333
+Hyd_plus_Fire                        0.0332
+Horizontal_Distance_To_Hydrology     0.0323
+Hyd_distance                         0.0322
+Vertical_Distance_To_Hydrology       0.0301
+
+Total time: 51.6 min
+Results: /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/results/stage4
