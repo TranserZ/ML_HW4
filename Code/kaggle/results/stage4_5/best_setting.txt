@@ -1,0 +1,12 @@
+Stage 4.5 final choice (cv_acc_mean, seed 3개 x 5 fold 평균 기준)
+method: ET + 노이즈 25% 제거 (4.5단계 b)
+model: ExtraTrees, features=C_fe
+setting: n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.25
+반복 CV accuracy: 0.6031 ± 0.0031
+반복 CV macro F1: 0.3880 ± 0.0058
+4단계 ET 대비: +0.0027 (14/15 fold 승)
+제거한 샘플: 7500개 / 30000개
+클래스별 제거 비율: 1: 6.3%, 2: 3.5%, 3: 45.8%, 4: 84.7%, 5: 73.4%, 6: 60.8%, 7: 59.6%
+Kaggle public LB: (제출 후 직접 기록)
+4단계 제출 파일과 test 예측이 다른 비율: 3.8%
+test 예측 클래스 비율: 1: 35.4%, 2: 50.7%, 3: 6.3%, 4: 0.4%, 5: 1.1%, 6: 2.7%, 7: 3.4%

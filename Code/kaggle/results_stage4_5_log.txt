@@ -1,0 +1,154 @@
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+<frozen site>:107: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/.venv, got /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/../../.venv
+C_fe: feature 66개
+
+==================== (a) ExtraTrees 범위 확장 ====================
+(1/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3
+    CV acc 0.6015 ± 0.0030 | CV F1 0.3877 | train acc 0.9271 | gap 0.3256 | 12.5s
+(2/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=4
+    CV acc 0.6002 ± 0.0033 | CV F1 0.3841 | train acc 0.7887 | gap 0.1884 | 12.2s
+(3/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=6
+    CV acc 0.5928 ± 0.0040 | CV F1 0.3735 | train acc 0.6992 | gap 0.1065 | 12.5s
+(4/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=8
+    CV acc 0.5860 ± 0.0046 | CV F1 0.3645 | train acc 0.6696 | gap 0.0836 | 11.6s
+(5/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=12
+    CV acc 0.5769 ± 0.0054 | CV F1 0.3515 | train acc 0.6351 | gap 0.0582 | 10.7s
+(6/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.85, min_samples_leaf=3
+    CV acc 0.6008 ± 0.0032 | CV F1 0.3866 | train acc 0.9417 | gap 0.3409 | 17.4s
+(7/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.85, min_samples_leaf=4
+    CV acc 0.6004 ± 0.0026 | CV F1 0.3860 | train acc 0.8046 | gap 0.2042 | 16.1s
+(8/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.85, min_samples_leaf=6
+    CV acc 0.5936 ± 0.0033 | CV F1 0.3744 | train acc 0.7044 | gap 0.1109 | 14.5s
+(9/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.85, min_samples_leaf=8
+    CV acc 0.5878 ± 0.0042 | CV F1 0.3666 | train acc 0.6741 | gap 0.0864 | 13.6s
+(10/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=0.85, min_samples_leaf=12
+    CV acc 0.5779 ± 0.0062 | CV F1 0.3531 | train acc 0.6389 | gap 0.0610 | 12.5s
+(11/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=1.0, min_samples_leaf=3
+    CV acc 0.5999 ± 0.0035 | CV F1 0.3858 | train acc 0.9523 | gap 0.3524 | 19.8s
+(12/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=1.0, min_samples_leaf=4
+    CV acc 0.6001 ± 0.0023 | CV F1 0.3852 | train acc 0.8165 | gap 0.2165 | 18.3s
+(13/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=1.0, min_samples_leaf=6
+    CV acc 0.5958 ± 0.0033 | CV F1 0.3783 | train acc 0.7083 | gap 0.1125 | 16.5s
+(14/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=1.0, min_samples_leaf=8
+    CV acc 0.5878 ± 0.0039 | CV F1 0.3676 | train acc 0.6774 | gap 0.0896 | 15.5s
+(15/15) [ExtraTrees] features=C_fe, n_estimators=300, max_features=1.0, min_samples_leaf=12
+    CV acc 0.5783 ± 0.0051 | CV F1 0.3546 | train acc 0.6419 | gap 0.0636 | 14.1s
+(트리 수 확인) [ExtraTrees] features=C_fe, n_estimators=600, max_features=0.7, min_samples_leaf=3
+    CV acc 0.6008 ± 0.0033 | CV F1 0.3871 | train acc 0.9274 | gap 0.3266 | 29.8s
+(트리 수 확인) [ExtraTrees] features=C_fe, n_estimators=1000, max_features=0.7, min_samples_leaf=3
+    CV acc 0.6012 ± 0.0032 | CV F1 0.3873 | train acc 0.9274 | gap 0.3262 | 49.5s
+
+========== (a) max_features x min_samples_leaf (300 trees, cv_acc_mean) ==========
+min_samples_leaf     3      4      6      8      12
+max_features                                       
+0.70             0.6015 0.6002 0.5928 0.5860 0.5769
+0.85             0.6008 0.6004 0.5936 0.5878 0.5779
+1.00             0.5999 0.6001 0.5958 0.5878 0.5783
+(a) 최고: features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3 -> 0.6015
+
+==================== (b) 노이즈 레이블 제거 ====================
+노이즈 판별 모델: ExtraTrees n_estimators=300, max_features=0.7, min_samples_leaf=3
+(1/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.0, filter_model=n300_mf0.7_leaf3
+    CV acc 0.5932 ± 0.0033 | CV F1 0.3815 | train acc 0.9998 | gap 0.4066 | 18.1s
+(2/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.05, filter_model=n300_mf0.7_leaf3
+    CV acc 0.5957 ± 0.0029 | CV F1 0.3845 | train acc 1.0000 | gap 0.4043 | 87.8s
+(3/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.1, filter_model=n300_mf0.7_leaf3
+    CV acc 0.5963 ± 0.0033 | CV F1 0.3856 | train acc 0.9999 | gap 0.4036 | 14.1s
+(4/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.15, filter_model=n300_mf0.7_leaf3
+    CV acc 0.5982 ± 0.0026 | CV F1 0.3866 | train acc 0.9998 | gap 0.4016 | 12.8s
+(5/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.2, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6021 ± 0.0026 | CV F1 0.3888 | train acc 0.9995 | gap 0.3974 | 11.5s
+(6/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.25, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6031 ± 0.0027 | CV F1 0.3893 | train acc 0.9990 | gap 0.3959 | 10.1s
+(7/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.3, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6005 ± 0.0025 | CV F1 0.3819 | train acc 0.9987 | gap 0.3982 | 8.8s
+(8/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.0, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6015 ± 0.0030 | CV F1 0.3877 | train acc 0.9271 | gap 0.3256 | 15.4s
+(9/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.05, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6019 ± 0.0034 | CV F1 0.3880 | train acc 0.9394 | gap 0.3375 | 13.9s
+(10/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.1, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6024 ± 0.0023 | CV F1 0.3874 | train acc 0.9477 | gap 0.3453 | 12.7s
+(11/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.15, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6021 ± 0.0021 | CV F1 0.3879 | train acc 0.9577 | gap 0.3556 | 11.6s
+(12/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.2, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6026 ± 0.0018 | CV F1 0.3872 | train acc 0.9697 | gap 0.3671 | 10.6s
+(13/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.25, filter_model=n300_mf0.7_leaf3
+    CV acc 0.6027 ± 0.0033 | CV F1 0.3878 | train acc 0.9856 | gap 0.3829 | 9.4s
+(14/14) [ExtraTrees+filter] features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=3, remove_fraction=0.3, filter_model=n300_mf0.7_leaf3
+    CV acc 0.5972 ± 0.0023 | CV F1 0.3779 | train acc 0.9947 | gap 0.3975 | 8.4s
+
+========== (b) 제거 비율 x min_samples_leaf (cv_acc_mean) ==========
+min_samples_leaf      2      3
+remove_fraction               
+0.00             0.5932 0.6015
+0.05             0.5957 0.6019
+0.10             0.5963 0.6024
+0.15             0.5982 0.6021
+0.20             0.6021 0.6026
+0.25             0.6031 0.6027
+0.30             0.6005 0.5972
+
+========== (b) 제거 안 함(0%) 대비 변화 ==========
+min_samples_leaf       2       3
+remove_fraction                 
+0.00             +0.0000 +0.0000
+0.05             +0.0025 +0.0004
+0.10             +0.0031 +0.0009
+0.15             +0.0050 +0.0006
+0.20             +0.0089 +0.0011
+0.25             +0.0099 +0.0012
+0.30             +0.0073 -0.0043
+
+========== 제거 비율별 각 클래스 레이블의 제거 비율 (seed 42, fold 평균) ==========
+(train 레이블 비율: 1: 28.4%, 2: 36.5%, 3: 9.0%, 4: 5.3%, 5: 6.3%, 6: 7.2%, 7: 7.4%)
+ remove_fraction  class_1  class_2  class_3  class_4  class_5  class_6  class_7
+            5.0%     0.8%     0.5%    10.0%    19.8%    14.4%    12.0%    12.0%
+           10.0%     1.5%     0.9%    19.8%    39.2%    28.9%    24.8%    24.6%
+           15.0%     2.5%     1.3%    29.4%    56.4%    43.5%    37.7%    37.6%
+           20.0%     3.9%     2.0%    38.4%    71.5%    59.1%    49.9%    49.6%
+           25.0%     6.2%     3.3%    45.9%    84.3%    73.5%    61.6%    60.0%
+           30.0%    11.0%     5.9%    51.2%    92.4%    84.8%    69.8%    66.5%
+(b) 최고: features=C_fe, n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.25, filter_model=n300_mf0.7_leaf3 -> 0.6031
+
+==================== (c) 반복 CV 최종 비교 ====================
+[RF (C_fe, 4단계)] seed 42: acc 0.5924 | F1 0.3743 | 35.2s
+[RF (C_fe, 4단계)] seed 0: acc 0.5914 | F1 0.3725 | 34.7s
+[RF (C_fe, 4단계)] seed 1: acc 0.5901 | F1 0.3729 | 34.9s
+[ET (C_fe, 4단계)] seed 42: acc 0.6002 | F1 0.3841 | 14.1s
+[ET (C_fe, 4단계)] seed 0: acc 0.6003 | F1 0.3845 | 14.0s
+[ET (C_fe, 4단계)] seed 1: acc 0.6005 | F1 0.3812 | 14.1s
+[ET 범위 확장 (4.5단계 a)] seed 42: acc 0.6015 | F1 0.3877 | 15.5s
+[ET 범위 확장 (4.5단계 a)] seed 0: acc 0.6014 | F1 0.3871 | 15.3s
+[ET 범위 확장 (4.5단계 a)] seed 1: acc 0.6013 | F1 0.3858 | 15.4s
+[ET + 노이즈 25% 제거 (4.5단계 b)] seed 42: acc 0.6031 | F1 0.3893 | 10.2s
+[ET + 노이즈 25% 제거 (4.5단계 b)] seed 0: acc 0.6036 | F1 0.3878 | 81.9s
+[ET + 노이즈 25% 제거 (4.5단계 b)] seed 1: acc 0.6024 | F1 0.3871 | 81.1s
+
+========== 최종 비교 (seed 3개 x 5 fold = 15개 점수) ==========
+                                    method  cv_acc_mean  cv_acc_std  cv_f1_mean  cv_f1_std  acc_seed42  acc_seed0  acc_seed1  vs_stage4_ET  wins_vs_stage4_ET
+                 ET + 노이즈 25% 제거 (4.5단계 b)       0.6031      0.0031      0.3880     0.0058      0.6031     0.6036     0.6024        0.0027            14.0000
+                        ET 범위 확장 (4.5단계 a)       0.6014      0.0033      0.3869     0.0061      0.6015     0.6014     0.6013        0.0010             8.0000
+                            ET (C_fe, 4단계)       0.6004      0.0038      0.3832     0.0062      0.6002     0.6003     0.6005        0.0000             0.0000
+                            RF (C_fe, 4단계)       0.5913      0.0036      0.3732     0.0083      0.5924     0.5914     0.5901       -0.0091             0.0000
+Stacking: RF+Bag+HGB+Ada (A_original, 3단계)       0.5803      0.0041      0.3591     0.0070      0.5802     0.5810     0.5799           NaN                NaN
+          Voting: RF+Bag (A_original, 3단계)       0.5803      0.0044      0.3606     0.0078      0.5802     0.5806     0.5801           NaN                NaN
+            RandomForest (A_original, 3단계)       0.5797      0.0046      0.3571     0.0074      0.5799     0.5797     0.5793           NaN                NaN
+            DecisionTree (A_original, 3단계)       0.5201      0.0057      0.3101     0.0073      0.5201     0.5217     0.5184           NaN                NaN
+                Baseline (A_original, 3단계)       0.3880      0.0061      0.2589     0.0033      0.3880     0.3868     0.3891           NaN                NaN
+
+========== 최종 선택: ET + 노이즈 25% 제거 (4.5단계 b) -> 제출 파일 생성 ==========
+Stage 4.5 final choice (cv_acc_mean, seed 3개 x 5 fold 평균 기준)
+method: ET + 노이즈 25% 제거 (4.5단계 b)
+model: ExtraTrees, features=C_fe
+setting: n_estimators=300, max_features=0.7, min_samples_leaf=2, remove_fraction=0.25
+반복 CV accuracy: 0.6031 ± 0.0031
+반복 CV macro F1: 0.3880 ± 0.0058
+4단계 ET 대비: +0.0027 (14/15 fold 승)
+제거한 샘플: 7500개 / 30000개
+클래스별 제거 비율: 1: 6.3%, 2: 3.5%, 3: 45.8%, 4: 84.7%, 5: 73.4%, 6: 60.8%, 7: 59.6%
+Kaggle public LB: (제출 후 직접 기록)
+4단계 제출 파일과 test 예측이 다른 비율: 3.8%
+test 예측 클래스 비율: 1: 35.4%, 2: 50.7%, 3: 6.3%, 4: 0.4%, 5: 1.1%, 6: 2.7%, 7: 3.4%
+
+Total time: 15.6 min
+Results: /home/min-gi/Desktop/2026_2/Introduction_to_machine_learning/ML_HW4/Code/kaggle/results/stage4_5
