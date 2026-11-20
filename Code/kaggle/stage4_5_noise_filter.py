@@ -356,7 +356,7 @@ def make_submission(choice, X, y, X_test, test_id, table):
 
     model = make_model(model_type, **params, n_jobs=FIT_JOBS).fit(X_train, y_train)
     pred = stable_predict(model, X_test)
-    submission =pd.DataFrame({'id': test_id, 'Cover_Type': pred})
+    submission = pd.DataFrame({'id': test_id, 'Cover_Type': pred})
     submission.to_csv(RESULT_DIR / 'submission_stage4_5_best.csv', index=False)
 
     row = table[table.method == name].iloc[0]
@@ -378,6 +378,20 @@ def make_submission(choice, X, y, X_test, test_id, table):
         text += f'4단계 제출 파일과 test 예측이 다른 비율: {(stage4_pred != pred).mean():.1%}\n'
     text += ('test 예측 클래스 비율: '
              + ', '.join(f'{c}: {(pred == c).mean():.1%}' for c in np.sort(y.unique())) + '\n')
+
+    # 최종 제출 코드(final_submission.py)의 EDIT HERE 부분에 그대로 붙여넣을 설정
+    filter_params = filter_params or params   # 노이즈 제거를 안 하면 FILTER_* 값은 쓰이지 않음
+    text += (
+        '\n----- final_submission.py의 EDIT HERE 부분에 그대로 붙여넣기 -----\n'
+        f"MODEL_TYPE = '{model_type}'\n"
+        f"N_ESTIMATORS = {params['n_estimators']}\n"
+        f"MAX_FEATURES = {params['max_features']}\n"
+        f"MIN_SAMPLES_LEAF = {params['min_samples_leaf']}\n"
+        f"REMOVE_FRACTION = {remove_fraction}\n"
+        f"FILTER_N_ESTIMATORS = {filter_params['n_estimators']}\n"
+        f"FILTER_MAX_FEATURES = {filter_params['max_features']}\n"
+        f"FILTER_MIN_SAMPLES_LEAF = {filter_params['min_samples_leaf']}\n"
+    )
 
     (RESULT_DIR / 'best_setting.txt').write_text(text, encoding='utf-8')
     print(text, flush=True)
